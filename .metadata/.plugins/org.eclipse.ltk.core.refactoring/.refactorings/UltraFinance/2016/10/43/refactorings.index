@@ -1,0 +1,7 @@
+1476702087046	Extract method 'Login'
+1476702573257	Extract method 'logOff'
+1476704993502	Introduce parameter for 'login'
+1476705038582	Introduce parameter for 'login'
+1476708914352	Extract method 'createAppFront'
+1476709060833	Introduce parameter for 'createAppFront'
+1476709073562	Introduce parameter for 'createAppFront'

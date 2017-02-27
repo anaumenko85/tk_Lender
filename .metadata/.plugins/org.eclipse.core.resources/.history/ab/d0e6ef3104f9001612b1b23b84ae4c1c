@@ -1,0 +1,10 @@
+package com.example.tests;
+
+public class BackFirsPage {
+
+	public Object getOriginator() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

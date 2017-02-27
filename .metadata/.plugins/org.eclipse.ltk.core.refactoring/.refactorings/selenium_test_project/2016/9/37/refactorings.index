@@ -1,0 +1,15 @@
+1473177671419	Copy file
+1473177722399	Copy compilation unit
+1473177729685	Delete element
+1473177807045	Delete element
+1473178355609	Rename type 'Untitled2'
+1473178857979	Rename type 'Untitled'
+1473249075981	Extract method 'gotoUserManagementConsol'
+1473249308955	Extract method 'CreateUser'
+1473249392036	Introduce parameter for 'createUser'
+1473249408418	Introduce parameter for 'createUser'
+1473249426347	Introduce parameter for 'createUser'
+1473256008295	Extract method 'isOnLoginPage'
+1473256184575	Rename type 'ChangePasswordTest'
+1473262395306	Extract local variable 'userNameField'
+1473262431143	Extract local variable 'passwordField'

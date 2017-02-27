@@ -1,0 +1,1535 @@
+<!DOCTYPE html><html xmlns="http://www.w3.org/1999/xhtml"><head><style type="text/css">[uib-typeahead-popup].dropdown-menu{display:block;}</style><style type="text/css">.uib-time input{width:50px;}</style><style type="text/css">[uib-tooltip-popup].tooltip.top-left &gt; .tooltip-arrow,[uib-tooltip-popup].tooltip.top-right &gt; .tooltip-arrow,[uib-tooltip-popup].tooltip.bottom-left &gt; .tooltip-arrow,[uib-tooltip-popup].tooltip.bottom-right &gt; .tooltip-arrow,[uib-tooltip-popup].tooltip.left-top &gt; .tooltip-arrow,[uib-tooltip-popup].tooltip.left-bottom &gt; .tooltip-arrow,[uib-tooltip-popup].tooltip.right-top &gt; .tooltip-arrow,[uib-tooltip-popup].tooltip.right-bottom &gt; .tooltip-arrow,[uib-tooltip-html-popup].tooltip.top-left &gt; .tooltip-arrow,[uib-tooltip-html-popup].tooltip.top-right &gt; .tooltip-arrow,[uib-tooltip-html-popup].tooltip.bottom-left &gt; .tooltip-arrow,[uib-tooltip-html-popup].tooltip.bottom-right &gt; .tooltip-arrow,[uib-tooltip-html-popup].tooltip.left-top &gt; .tooltip-arrow,[uib-tooltip-html-popup].tooltip.left-bottom &gt; .tooltip-arrow,[uib-tooltip-html-popup].tooltip.right-top &gt; .tooltip-arrow,[uib-tooltip-html-popup].tooltip.right-bottom &gt; .tooltip-arrow,[uib-tooltip-template-popup].tooltip.top-left &gt; .tooltip-arrow,[uib-tooltip-template-popup].tooltip.top-right &gt; .tooltip-arrow,[uib-tooltip-template-popup].tooltip.bottom-left &gt; .tooltip-arrow,[uib-tooltip-template-popup].tooltip.bottom-right &gt; .tooltip-arrow,[uib-tooltip-template-popup].tooltip.left-top &gt; .tooltip-arrow,[uib-tooltip-template-popup].tooltip.left-bottom &gt; .tooltip-arrow,[uib-tooltip-template-popup].tooltip.right-top &gt; .tooltip-arrow,[uib-tooltip-template-popup].tooltip.right-bottom &gt; .tooltip-arrow,[uib-popover-popup].popover.top-left &gt; .arrow,[uib-popover-popup].popover.top-right &gt; .arrow,[uib-popover-popup].popover.bottom-left &gt; .arrow,[uib-popover-popup].popover.bottom-right &gt; .arrow,[uib-popover-popup].popover.left-top &gt; .arrow,[uib-popover-popup].popover.left-bottom &gt; .arrow,[uib-popover-popup].popover.right-top &gt; .arrow,[uib-popover-popup].popover.right-bottom &gt; .arrow,[uib-popover-html-popup].popover.top-left &gt; .arrow,[uib-popover-html-popup].popover.top-right &gt; .arrow,[uib-popover-html-popup].popover.bottom-left &gt; .arrow,[uib-popover-html-popup].popover.bottom-right &gt; .arrow,[uib-popover-html-popup].popover.left-top &gt; .arrow,[uib-popover-html-popup].popover.left-bottom &gt; .arrow,[uib-popover-html-popup].popover.right-top &gt; .arrow,[uib-popover-html-popup].popover.right-bottom &gt; .arrow,[uib-popover-template-popup].popover.top-left &gt; .arrow,[uib-popover-template-popup].popover.top-right &gt; .arrow,[uib-popover-template-popup].popover.bottom-left &gt; .arrow,[uib-popover-template-popup].popover.bottom-right &gt; .arrow,[uib-popover-template-popup].popover.left-top &gt; .arrow,[uib-popover-template-popup].popover.left-bottom &gt; .arrow,[uib-popover-template-popup].popover.right-top &gt; .arrow,[uib-popover-template-popup].popover.right-bottom &gt; .arrow{top:auto;bottom:auto;left:auto;right:auto;margin:0;}[uib-popover-popup].popover,[uib-popover-html-popup].popover,[uib-popover-template-popup].popover{display:block !important;}</style><style type="text/css">.uib-datepicker-popup.dropdown-menu{display:block;float:none;margin:0;}.uib-button-bar{padding:10px 9px 2px;}</style><style type="text/css">.uib-position-measure{display:block !important;visibility:hidden !important;position:absolute !important;top:-9999px !important;left:-9999px !important;}.uib-position-scrollbar-measure{position:absolute !important;top:-9999px !important;width:50px !important;height:50px !important;overflow:scroll !important;}.uib-position-body-scrollbar-measure{overflow:scroll !important;}</style><style type="text/css">.uib-datepicker .uib-title{width:100%;}.uib-day button,.uib-month button,.uib-year button{min-width:100%;}.uib-left,.uib-right{width:100%}</style><style type="text/css">.ng-animate.item:not(.left):not(.right){-webkit-transition:0s ease-in-out left;transition:0s ease-in-out left}</style><style type="text/css">@charset "UTF-8";[ng\:cloak],[ng-cloak],[data-ng-cloak],[x-ng-cloak],.ng-cloak,.x-ng-cloak,.ng-hide:not(.ng-hide-animate){display:none !important;}ng\:form{display:block;}.ng-animate-shim{visibility:hidden;}.ng-anchor{position:absolute;}</style>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <link rel="apple-touch-icon-precomposed" sizes="57x57" href="/Content/favicon/apple-touch-icon-57x57.png" />
+<link rel="apple-touch-icon-precomposed" sizes="114x114" href="/Content/favicon/apple-touch-icon-114x114.png" />
+<link rel="apple-touch-icon-precomposed" sizes="72x72" href="/Content/favicon/apple-touch-icon-72x72.png" />
+<link rel="apple-touch-icon-precomposed" sizes="144x144" href="/Content/favicon/apple-touch-icon-144x144.png" />
+<link rel="apple-touch-icon-precomposed" sizes="60x60" href="/Content/favicon/apple-touch-icon-60x60.png" />
+<link rel="apple-touch-icon-precomposed" sizes="120x120" href="/Content/favicon/apple-touch-icon-120x120.png" />
+<link rel="apple-touch-icon-precomposed" sizes="76x76" href="/Content/favicon/apple-touch-icon-76x76.png" />
+<link rel="apple-touch-icon-precomposed" sizes="152x152" href="/Content/favicon/apple-touch-icon-152x152.png" />
+
+<link rel="icon" type="image/png" href="/Content/favicon/favicon-196x196.png" sizes="196x196" />
+<link rel="icon" type="image/png" href="/Content/favicon/favicon-96x96.png" sizes=" 96x96" />
+<link rel="icon" type="image/png" href="/Content/favicon/favicon-32x32.png" sizes=" 32x32" />
+<link rel="icon" type="image/png" href="/Content/favicon/favicon-16x16.png" sizes=" 16x16" />
+<link rel="icon" type="image/png" href="/Content/favicon/favicon-128.png" sizes="128x128" />
+<meta name="application-name" content=" " />
+<meta name="msapplication-TileColor" content="#FFFFFF" />
+<meta name="msapplication-TileImage" content="/Content/favicon/mstile-144x144.png" />
+<meta name="msapplication-square70x70logo" content="/Content/favicon/mstile-70x70.png" />
+<meta name="msapplication-square150x150logo" content="/Content/favicon/mstile-150x150.png" />
+<meta name="msapplication-wide310x150logo" content="/Content/favicon/mstile-310x150.png" />
+<meta name="msapplication-square310x310logo" content="/Content/favicon/mstile-310x310.png" />
+
+<link href="/favicon.ico?v=7" rel="shortcut icon" />
+    <title>Bonds</title>
+
+    <link href="/Content/css_common?v=3PKyvnANfIgLdt-M3c-ZJsN5p2mLCaKtO5Kcir3wObM1" rel="stylesheet" />
+
+    <link href="/Content/css_app?v=5v9sJQzoyM3xdlQvbmtVfaB0YGI8U6jIssjvYs_D6RE1" rel="stylesheet" />
+
+
+<style type="text/css"></style></head>
+<body ng-app="el.app" class="ng-scope">
+    <!-- <script type="text/javascript" src="//dl1d2m8ri9v3j.cloudfront.net/releases/1.2.4/tracker.js" data-customer="968fe0858a5447dea1fb4e8019622c86"></script> -->
+    <section class="container body-content">
+        <elmenu><div class="navbar navbar-inverse navbar-fixed-top">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+        </div>
+        <div class="navbar-collapse collapse">
+            <!-- ngRepeat: item in menu --><ul class="nav navbar-nav ng-scope" ng-repeat="item in menu">
+                <li ng-class="getMenuClass(item, currentPath)" class="active"><a tabindex="-1" href="#/origination" class="ng-binding">Origination</a></li>
+            </ul><!-- end ngRepeat: item in menu --><ul class="nav navbar-nav ng-scope" ng-repeat="item in menu">
+                <li ng-class="getMenuClass(item, currentPath)"><a tabindex="-1" href="#/underwriting" class="ng-binding">Underwriting</a></li>
+            </ul><!-- end ngRepeat: item in menu --><ul class="nav navbar-nav ng-scope" ng-repeat="item in menu">
+                <li ng-class="getMenuClass(item, currentPath)"><a tabindex="-1" href="#/collateral" class="ng-binding">Collateral</a></li>
+            </ul><!-- end ngRepeat: item in menu --><ul class="nav navbar-nav ng-scope" ng-repeat="item in menu">
+                <li ng-class="getMenuClass(item, currentPath)"><a tabindex="-1" href="#/servicing" class="ng-binding">Servicing</a></li>
+            </ul><!-- end ngRepeat: item in menu --><ul class="nav navbar-nav ng-scope" ng-repeat="item in menu">
+                <li ng-class="getMenuClass(item, currentPath)"><a tabindex="-1" href="#/collection" class="ng-binding">Collection</a></li>
+            </ul><!-- end ngRepeat: item in menu --><ul class="nav navbar-nav ng-scope" ng-repeat="item in menu">
+                <li ng-class="getMenuClass(item, currentPath)"><a tabindex="-1" href="#/portfolio/executive" class="ng-binding">Reports</a></li>
+            </ul><!-- end ngRepeat: item in menu --><ul class="nav navbar-nav ng-scope" ng-repeat="item in menu">
+                <li ng-class="getMenuClass(item, currentPath)"><a tabindex="-1" href="#/archive" class="ng-binding">Archive</a></li>
+            </ul><!-- end ngRepeat: item in menu --><ul class="nav navbar-nav ng-scope" ng-repeat="item in menu">
+                <li ng-class="getMenuClass(item, currentPath)"><a tabindex="-1" href="#/system/administration" class="ng-binding">System</a></li>
+            </ul><!-- end ngRepeat: item in menu --><ul class="nav navbar-nav ng-scope" ng-repeat="item in menu">
+                <li ng-class="getMenuClass(item, currentPath)"><a tabindex="-1" href="#/testing/schedule" class="ng-binding">_Testing_</a></li>
+            </ul><!-- end ngRepeat: item in menu -->
+            <login-button>
+<!-- ngIf: !globals.registered -->
+    
+<!-- ngIf: globals.registered --><ul class="nav navbar-nav navbar-right ng-scope" ng-if="globals.registered">
+    <!-- ngIf: globals.user.username --><li class="user-hello ng-scope" ng-if="globals.user.username">
+        
+        <a class="ng-binding">Hello Alex Test!</a>
+    </li><!-- end ngIf: globals.user.username -->
+    <li><a href="" tabindex="-1" ng-click="logout()">Log off</a></li>
+</ul><!-- end ngIf: globals.registered -->
+
+</login-button>
+        </div>
+    </div>
+</div>
+    
+<div class="row">
+    <!-- ngIf: currenMenuItem.subMenu.length > 0 -->
+    <div ng-class="{'col-md-9 col-lg-10 ': currenMenuItem.subMenu.length &gt; 0}" ng-transclude="">
+            <!-- ngView: --><ng-view class="ng-scope">
+<split-view loan-split-view="" filter-type="Origination" class="ng-scope loan-shown real-loan"><div ng-transclude="" class="mode-split">
+    <split-toolbar class="ng-scope"><nav class="navbar navbar-default split-toolbar" role="navigation">
+    <form class="navbar-form navbar-left split-toolbar-form ng-pristine ng-valid" ng-transclude="" novalidate="">
+            
+        <div class="form-group pull-right clearfix ng-scope">
+            <split-list>
+<div class="btn-group" ng-show="shown">
+    <button type="button" class="btn btn-default" ng-click="switch('list')" ng-class="{active: mode=='list'}">List</button>
+    <button type="button" class="btn btn-default active" ng-click="switch('split')" ng-class="{active: mode=='split'}">Split</button>
+    <button type="button" class="btn btn-default" ng-click="switch('details')" ng-class="{active: mode=='details'}">Details</button>
+</div></split-list>
+        </div>
+                        
+        <div class="form-group ng-scope">
+            <a href="#/origination/newapp" class="btn btn-primary">New Application</a>
+
+            <drop-down icon="time" key="search.filters.filterDate" items="[{&quot;key&quot;:0,&quot;value&quot;:&quot;All&quot;},{&quot;key&quot;:1,&quot;value&quot;:&quot;Last 20&quot;},{&quot;key&quot;:2,&quot;value&quot;:&quot;Last 50&quot;},{&quot;key&quot;:3,&quot;value&quot;:&quot;Today&quot;},{&quot;key&quot;:4,&quot;value&quot;:&quot;Last 3 Days&quot;},{&quot;key&quot;:5,&quot;value&quot;:&quot;This Week&quot;},{&quot;key&quot;:6,&quot;value&quot;:&quot;This Month&quot;}]" class="ng-isolate-scope"><div class="btn-group dropdown" uib-dropdown="" is-open="isOpen">
+    <button type="button" class="btn btn-default dropdown-toggle ng-binding" data-toggle="dropdown">
+        <!-- ngIf: icon --><span ng-if="icon" class="glyphicon glyphicon-time"></span><!-- end ngIf: icon --> All <span class="caret"></span>
+    </button>
+    <ul class="dropdown-menu" role="menu">
+        <!-- ngRepeat: item in items --><li ng-repeat="item in items" class="ng-scope"><a href="" ng-click="select(item)" class="ng-binding">All</a></li><!-- end ngRepeat: item in items --><li ng-repeat="item in items" class="ng-scope"><a href="" ng-click="select(item)" class="ng-binding">Last 20</a></li><!-- end ngRepeat: item in items --><li ng-repeat="item in items" class="ng-scope"><a href="" ng-click="select(item)" class="ng-binding">Last 50</a></li><!-- end ngRepeat: item in items --><li ng-repeat="item in items" class="ng-scope"><a href="" ng-click="select(item)" class="ng-binding">Today</a></li><!-- end ngRepeat: item in items --><li ng-repeat="item in items" class="ng-scope"><a href="" ng-click="select(item)" class="ng-binding">Last 3 Days</a></li><!-- end ngRepeat: item in items --><li ng-repeat="item in items" class="ng-scope"><a href="" ng-click="select(item)" class="ng-binding">This Week</a></li><!-- end ngRepeat: item in items --><li ng-repeat="item in items" class="ng-scope"><a href="" ng-click="select(item)" class="ng-binding">This Month</a></li><!-- end ngRepeat: item in items -->
+    </ul>
+</div></drop-down>
+            <drop-down icon="filter" key="search.filters.filterStatus" items="[{&quot;key&quot;:0,&quot;value&quot;:&quot;All Incomplete&quot;},{&quot;key&quot;:1,&quot;value&quot;:&quot;Origination&quot;},{&quot;key&quot;:2,&quot;value&quot;:&quot;Reprocessing&quot;},{&quot;key&quot;:3,&quot;value&quot;:&quot;Created by Me&quot;}]" class="ng-isolate-scope"><div class="btn-group dropdown" uib-dropdown="" is-open="isOpen">
+    <button type="button" class="btn btn-default dropdown-toggle ng-binding" data-toggle="dropdown">
+        <!-- ngIf: icon --><span ng-if="icon" class="glyphicon glyphicon-filter"></span><!-- end ngIf: icon --> All Incomplete <span class="caret"></span>
+    </button>
+    <ul class="dropdown-menu" role="menu">
+        <!-- ngRepeat: item in items --><li ng-repeat="item in items" class="ng-scope"><a href="" ng-click="select(item)" class="ng-binding">All Incomplete</a></li><!-- end ngRepeat: item in items --><li ng-repeat="item in items" class="ng-scope"><a href="" ng-click="select(item)" class="ng-binding">Origination</a></li><!-- end ngRepeat: item in items --><li ng-repeat="item in items" class="ng-scope"><a href="" ng-click="select(item)" class="ng-binding">Reprocessing</a></li><!-- end ngRepeat: item in items --><li ng-repeat="item in items" class="ng-scope"><a href="" ng-click="select(item)" class="ng-binding">Created by Me</a></li><!-- end ngRepeat: item in items -->
+    </ul>
+</div></drop-down>
+        </div>
+
+        <div class="form-group ng-scope">
+            <input type="text" class="form-control ng-pristine ng-untouched ng-valid ng-empty" placeholder="Search" ng-model="search.search" />
+        </div>
+
+    </form>
+</nav></split-toolbar>
+    <div ng-transclude="" class="split-left-split col-md-4 col-lg-4" ng-class="getCss()" ng-show="visible()">
+            <w-grid id="applicationsGrid" col-model="[{&quot;name&quot;: &quot;Id&quot;,&quot;index&quot;: &quot;Id&quot;,&quot;formatter&quot;: &quot;id&quot;,&quot;width&quot;: 90,&quot;key&quot;: true,&quot;resizable&quot;: false,&quot;search&quot;: true,&quot;hidden&quot;: false,&quot;title&quot;: false,&quot;sortable&quot;: true,&quot;fixed&quot;: true,&quot;align&quot;: &quot;left&quot;,&quot;searchoptions&quot;: {&quot;sopt&quot;:[&quot;eq&quot;,&quot;ne&quot;,&quot;lt&quot;,&quot;le&quot;,&quot;gt&quot;,&quot;ge&quot;]}},&#10;{&quot;name&quot;: &quot;PublicId&quot;,&quot;index&quot;: &quot;PublicId&quot;,&quot;resizable&quot;: false,&quot;search&quot;: true,&quot;hidden&quot;: true,&quot;title&quot;: false,&quot;sortable&quot;: true,&quot;fixed&quot;: true,&quot;align&quot;: &quot;left&quot;,&quot;searchoptions&quot;: {&quot;sopt&quot;:[&quot;eq&quot;,&quot;ne&quot;,&quot;lt&quot;,&quot;le&quot;,&quot;gt&quot;,&quot;ge&quot;,&quot;bw&quot;,&quot;bn&quot;,&quot;ew&quot;,&quot;en&quot;,&quot;cn&quot;,&quot;nc&quot;]}},&#10;{&quot;name&quot;: &quot;CreationDate&quot;,&quot;index&quot;: &quot;CreationDate&quot;,&quot;width&quot;: 75,&quot;resizable&quot;: false,&quot;search&quot;: true,&quot;hidden&quot;: false,&quot;title&quot;: false,&quot;sortable&quot;: true,&quot;fixed&quot;: true,&quot;align&quot;: &quot;center&quot;,&quot;searchoptions&quot;: {&quot;sopt&quot;:[&quot;eq&quot;,&quot;ne&quot;,&quot;lt&quot;,&quot;le&quot;,&quot;gt&quot;,&quot;ge&quot;]}},&#10;{&quot;name&quot;: &quot;FullName&quot;,&quot;index&quot;: &quot;Customer.CustomerDetails.FullName&quot;,&quot;formatter&quot;: &quot;fullName&quot;,&quot;width&quot;: 160,&quot;resizable&quot;: false,&quot;search&quot;: true,&quot;hidden&quot;: false,&quot;title&quot;: false,&quot;sortable&quot;: true,&quot;fixed&quot;: false,&quot;align&quot;: &quot;center&quot;,&quot;searchoptions&quot;: {&quot;sopt&quot;:[&quot;eq&quot;,&quot;ne&quot;,&quot;lt&quot;,&quot;le&quot;,&quot;gt&quot;,&quot;ge&quot;,&quot;bw&quot;,&quot;bn&quot;,&quot;ew&quot;,&quot;en&quot;,&quot;cn&quot;,&quot;nc&quot;]}},&#10;{&quot;name&quot;: &quot;Amount&quot;,&quot;index&quot;: &quot;Offer.Amount&quot;,&quot;width&quot;: 80,&quot;resizable&quot;: false,&quot;search&quot;: true,&quot;hidden&quot;: false,&quot;title&quot;: false,&quot;sortable&quot;: true,&quot;fixed&quot;: true,&quot;align&quot;: &quot;center&quot;},&#10;{&quot;name&quot;: &quot;Term&quot;,&quot;index&quot;: &quot;Offer.Period.Value&quot;,&quot;width&quot;: 70,&quot;resizable&quot;: false,&quot;search&quot;: true,&quot;hidden&quot;: true,&quot;title&quot;: false,&quot;sortable&quot;: true,&quot;fixed&quot;: true,&quot;align&quot;: &quot;center&quot;,&quot;searchoptions&quot;: {&quot;sopt&quot;:[&quot;eq&quot;,&quot;ne&quot;,&quot;lt&quot;,&quot;le&quot;,&quot;gt&quot;,&quot;ge&quot;]}},&#10;{&quot;name&quot;: &quot;InterestRate&quot;,&quot;index&quot;: &quot;Offer.InterestRate&quot;,&quot;width&quot;: 60,&quot;resizable&quot;: false,&quot;search&quot;: true,&quot;hidden&quot;: true,&quot;title&quot;: false,&quot;sortable&quot;: true,&quot;fixed&quot;: true,&quot;align&quot;: &quot;center&quot;},&#10;{&quot;name&quot;: &quot;Email&quot;,&quot;index&quot;: &quot;Customer.CustomerDetails.Email&quot;,&quot;width&quot;: 100,&quot;resizable&quot;: false,&quot;search&quot;: true,&quot;hidden&quot;: true,&quot;title&quot;: false,&quot;sortable&quot;: true,&quot;fixed&quot;: false,&quot;align&quot;: &quot;center&quot;,&quot;searchoptions&quot;: {&quot;sopt&quot;:[&quot;eq&quot;,&quot;ne&quot;,&quot;lt&quot;,&quot;le&quot;,&quot;gt&quot;,&quot;ge&quot;,&quot;bw&quot;,&quot;bn&quot;,&quot;ew&quot;,&quot;en&quot;,&quot;cn&quot;,&quot;nc&quot;]}},&#10;{&quot;name&quot;: &quot;Phone&quot;,&quot;index&quot;: &quot;CustomerDetails.Id&quot;,&quot;width&quot;: 60,&quot;resizable&quot;: false,&quot;search&quot;: true,&quot;hidden&quot;: true,&quot;title&quot;: false,&quot;sortable&quot;: false,&quot;fixed&quot;: false,&quot;align&quot;: &quot;center&quot;,&quot;searchoptions&quot;: {&quot;sopt&quot;:[&quot;eq&quot;,&quot;ne&quot;,&quot;lt&quot;,&quot;le&quot;,&quot;gt&quot;,&quot;ge&quot;,&quot;bw&quot;,&quot;bn&quot;,&quot;ew&quot;,&quot;en&quot;,&quot;cn&quot;,&quot;nc&quot;]}},&#10;{&quot;name&quot;: &quot;Waiting&quot;,&quot;index&quot;: &quot;WaitingFromOrigination&quot;,&quot;width&quot;: 60,&quot;resizable&quot;: false,&quot;search&quot;: true,&quot;hidden&quot;: false,&quot;title&quot;: false,&quot;sortable&quot;: true,&quot;fixed&quot;: true,&quot;align&quot;: &quot;center&quot;,&quot;searchoptions&quot;: {&quot;sopt&quot;:[&quot;eq&quot;,&quot;ne&quot;,&quot;lt&quot;,&quot;le&quot;,&quot;gt&quot;,&quot;ge&quot;,&quot;bw&quot;,&quot;bn&quot;,&quot;ew&quot;,&quot;en&quot;,&quot;cn&quot;,&quot;nc&quot;]}},&#10;{&quot;name&quot;: &quot;Status&quot;,&quot;index&quot;: &quot;Status&quot;,&quot;formatter&quot;: &quot;loanStatusFormatter&quot;,&quot;width&quot;: 40,&quot;resizable&quot;: false,&quot;search&quot;: false,&quot;hidden&quot;: false,&quot;title&quot;: false,&quot;sortable&quot;: true,&quot;fixed&quot;: true,&quot;align&quot;: &quot;center&quot;,&quot;searchoptions&quot;: {&quot;sopt&quot;:[&quot;eq&quot;,&quot;ne&quot;,&quot;lt&quot;,&quot;le&quot;,&quot;gt&quot;,&quot;ge&quot;,&quot;bw&quot;,&quot;bn&quot;,&quot;ew&quot;,&quot;en&quot;,&quot;cn&quot;,&quot;nc&quot;]}}]" col-names="[&quot;Id&quot;,&#10;&quot;Id&quot;,&#10;&quot;Created&quot;,&#10;&quot;Name&quot;,&#10;&quot;Amount&quot;,&#10;&quot;Term&quot;,&#10;&quot;Interest Rate&quot;,&#10;&quot;Email&quot;,&#10;&quot;Phone&quot;,&#10;&quot;Wait&quot;,&#10;&quot;&quot;]" split-grid="" col-split="[&quot;Term&quot;,&#10;&quot;InterestRate&quot;,&#10;&quot;Email&quot;,&#10;&quot;Phone&quot;]" url="Api/LoanList/Origination" search="search.search" parameters="search.filters" selected="[]" auto-select="true" class="loangrid ng-scope ng-isolate-scope" onselectrow="selectLoan(rowid, options)" default-sort="{&quot;column&quot;: &quot;WaitingFromOrigination&quot;, &quot;order&quot;: &quot;asc&quot;}"><div><div class="ui-jqgrid ui-widget ui-widget-content ui-corner-all" id="gbox_applicationsGrid_grid" dir="ltr" style="width: 623px;"><div class="ui-widget-overlay jqgrid-overlay" id="lui_applicationsGrid_grid"></div><div class="loading ui-state-default ui-state-active" id="load_applicationsGrid_grid" style="display: none;">Loading...</div><div class="ui-jqgrid-view" id="gview_applicationsGrid_grid" style="width: 623px;"><div class="ui-jqgrid-titlebar ui-jqgrid-caption ui-widget-header ui-corner-top ui-helper-clearfix" style="display: none;"><span class="ui-jqgrid-title"></span></div><div class="ui-state-default ui-jqgrid-hdiv" style="width: 623px;"><div class="ui-jqgrid-hbox"><table class="ui-jqgrid-htable" style="width: 623px;" role="grid" aria-labelledby="gbox_applicationsGrid_grid" cellspacing="0" cellpadding="0" border="0"><thead><tr class="ui-jqgrid-labels" role="rowheader"><th id="applicationsGrid_grid_Id" role="columnheader" class="ui-state-default ui-th-column ui-th-ltr" style="width: 90px;"><div id="jqgh_applicationsGrid_grid_Id" class="ui-jqgrid-sortable">Id<span class="s-ico" style="display:none"><span sort="asc" class="ui-grid-ico-sort ui-icon-asc ui-state-disabled ui-icon ui-icon-triangle-1-n ui-sort-ltr"></span><span sort="desc" class="ui-grid-ico-sort ui-icon-desc ui-state-disabled ui-icon ui-icon-triangle-1-s ui-sort-ltr"></span></span></div></th><th id="applicationsGrid_grid_PublicId" role="columnheader" class="ui-state-default ui-th-column ui-th-ltr" style="width: 150px; display: none;"><div id="jqgh_applicationsGrid_grid_PublicId" class="ui-jqgrid-sortable">Id<span class="s-ico" style="display:none"><span sort="asc" class="ui-grid-ico-sort ui-icon-asc ui-state-disabled ui-icon ui-icon-triangle-1-n ui-sort-ltr"></span><span sort="desc" class="ui-grid-ico-sort ui-icon-desc ui-state-disabled ui-icon ui-icon-triangle-1-s ui-sort-ltr"></span></span></div></th><th id="applicationsGrid_grid_CreationDate" role="columnheader" class="ui-state-default ui-th-column ui-th-ltr" style="width: 75px;"><div id="jqgh_applicationsGrid_grid_CreationDate" class="ui-jqgrid-sortable">Created<span class="s-ico" style="display:none"><span sort="asc" class="ui-grid-ico-sort ui-icon-asc ui-state-disabled ui-icon ui-icon-triangle-1-n ui-sort-ltr"></span><span sort="desc" class="ui-grid-ico-sort ui-icon-desc ui-state-disabled ui-icon ui-icon-triangle-1-s ui-sort-ltr"></span></span></div></th><th id="applicationsGrid_grid_FullName" role="columnheader" class="ui-state-default ui-th-column ui-th-ltr ui-state-hover" style="width: 278px;"><div id="jqgh_applicationsGrid_grid_FullName" class="ui-jqgrid-sortable">Name<span class="s-ico" style="display:none"><span sort="asc" class="ui-grid-ico-sort ui-icon-asc ui-state-disabled ui-icon ui-icon-triangle-1-n ui-sort-ltr"></span><span sort="desc" class="ui-grid-ico-sort ui-icon-desc ui-state-disabled ui-icon ui-icon-triangle-1-s ui-sort-ltr"></span></span></div></th><th id="applicationsGrid_grid_Amount" role="columnheader" class="ui-state-default ui-th-column ui-th-ltr" style="width: 80px;"><div id="jqgh_applicationsGrid_grid_Amount" class="ui-jqgrid-sortable">Amount<span class="s-ico" style="display:none"><span sort="asc" class="ui-grid-ico-sort ui-icon-asc ui-state-disabled ui-icon ui-icon-triangle-1-n ui-sort-ltr"></span><span sort="desc" class="ui-grid-ico-sort ui-icon-desc ui-state-disabled ui-icon ui-icon-triangle-1-s ui-sort-ltr"></span></span></div></th><th id="applicationsGrid_grid_Term" role="columnheader" class="ui-state-default ui-th-column ui-th-ltr" style="width: 70px; display: none;"><div id="jqgh_applicationsGrid_grid_Term" class="ui-jqgrid-sortable">Term<span class="s-ico" style="display:none"><span sort="asc" class="ui-grid-ico-sort ui-icon-asc ui-state-disabled ui-icon ui-icon-triangle-1-n ui-sort-ltr"></span><span sort="desc" class="ui-grid-ico-sort ui-icon-desc ui-state-disabled ui-icon ui-icon-triangle-1-s ui-sort-ltr"></span></span></div></th><th id="applicationsGrid_grid_InterestRate" role="columnheader" class="ui-state-default ui-th-column ui-th-ltr" style="width: 60px; display: none;"><div id="jqgh_applicationsGrid_grid_InterestRate" class="ui-jqgrid-sortable">Interest Rate<span class="s-ico" style="display:none"><span sort="asc" class="ui-grid-ico-sort ui-icon-asc ui-state-disabled ui-icon ui-icon-triangle-1-n ui-sort-ltr"></span><span sort="desc" class="ui-grid-ico-sort ui-icon-desc ui-state-disabled ui-icon ui-icon-triangle-1-s ui-sort-ltr"></span></span></div></th><th id="applicationsGrid_grid_Email" role="columnheader" class="ui-state-default ui-th-column ui-th-ltr" style="width: 100px; display: none;"><div id="jqgh_applicationsGrid_grid_Email" class="ui-jqgrid-sortable">Email<span class="s-ico" style="display:none"><span sort="asc" class="ui-grid-ico-sort ui-icon-asc ui-state-disabled ui-icon ui-icon-triangle-1-n ui-sort-ltr"></span><span sort="desc" class="ui-grid-ico-sort ui-icon-desc ui-state-disabled ui-icon ui-icon-triangle-1-s ui-sort-ltr"></span></span></div></th><th id="applicationsGrid_grid_Phone" role="columnheader" class="ui-state-default ui-th-column ui-th-ltr" style="width: 60px; display: none;"><div id="jqgh_applicationsGrid_grid_Phone" class="ui-jqgrid-sortable">Phone<span class="s-ico" style="display:none"><span sort="asc" class="ui-grid-ico-sort ui-icon-asc ui-state-disabled ui-icon ui-icon-triangle-1-n ui-sort-ltr"></span><span sort="desc" class="ui-grid-ico-sort ui-icon-desc ui-state-disabled ui-icon ui-icon-triangle-1-s ui-sort-ltr"></span></span></div></th><th id="applicationsGrid_grid_Waiting" role="columnheader" class="ui-state-default ui-th-column ui-th-ltr" style="width: 60px;"><div id="jqgh_applicationsGrid_grid_Waiting" class="ui-jqgrid-sortable">Wait<span class="s-ico" style=""><span sort="asc" class="ui-grid-ico-sort ui-icon-asc ui-icon ui-icon-triangle-1-n ui-sort-ltr"></span><span sort="desc" class="ui-grid-ico-sort ui-icon-desc ui-state-disabled ui-icon ui-icon-triangle-1-s ui-sort-ltr"></span></span></div></th><th id="applicationsGrid_grid_Status" role="columnheader" class="ui-state-default ui-th-column ui-th-ltr" style="width: 40px;"><div id="jqgh_applicationsGrid_grid_Status" class="ui-jqgrid-sortable"><span class="s-ico" style="display:none"><span sort="asc" class="ui-grid-ico-sort ui-icon-asc ui-state-disabled ui-icon ui-icon-triangle-1-n ui-sort-ltr"></span><span sort="desc" class="ui-grid-ico-sort ui-icon-desc ui-state-disabled ui-icon ui-icon-triangle-1-s ui-sort-ltr"></span></span></div></th></tr></thead></table></div></div><div class="ui-jqgrid-bdiv" style="height: 550px; width: 623px;"><div style="position:relative;"><div></div><table id="applicationsGrid_grid" tabindex="0" cellspacing="0" cellpadding="0" border="0" role="grid" aria-multiselectable="false" aria-labelledby="gbox_applicationsGrid_grid" class="ui-jqgrid-btable" style="width: 623px;"><tbody><tr class="jqgfirstrow" role="row" style="height:auto"><td role="gridcell" style="height:0px;width:90px;"></td><td role="gridcell" style="height:0px;width:150px;display:none;"></td><td role="gridcell" style="height:0px;width:75px;"></td><td role="gridcell" style="height: 0px; width: 278px;"></td><td role="gridcell" style="height:0px;width:80px;"></td><td role="gridcell" style="height:0px;width:70px;display:none;"></td><td role="gridcell" style="height:0px;width:60px;display:none;"></td><td role="gridcell" style="height:0px;width:100px;display:none;"></td><td role="gridcell" style="height:0px;width:60px;display:none;"></td><td role="gridcell" style="height:0px;width:60px;"></td><td role="gridcell" style="height:0px;width:40px;"></td></tr><tr role="row" id="1" tabindex="0" class="ui-widget-content jqgrow ui-row-ltr ui-state-highlight" aria-selected="true"><td role="gridcell" style="text-align:left;" aria-describedby="applicationsGrid_grid_Id"><span>CFBL-0-S1-1</span></td><td role="gridcell" style="text-align:left;display:none;" aria-describedby="applicationsGrid_grid_PublicId">CFBL-0-S1-1</td><td role="gridcell" style="text-align:center;" aria-describedby="applicationsGrid_grid_CreationDate">1/30/2017</td><td role="gridcell" style="text-align:center;" aria-describedby="applicationsGrid_grid_FullName"><span class="fullname">Fd Fd</span></td><td role="gridcell" style="text-align:center;" aria-describedby="applicationsGrid_grid_Amount">$150,000.00</td><td role="gridcell" style="text-align:center;display:none;" aria-describedby="applicationsGrid_grid_Term">6 Months</td><td role="gridcell" style="text-align:center;display:none;" aria-describedby="applicationsGrid_grid_InterestRate">0.83%</td><td role="gridcell" style="text-align:center;display:none;" aria-describedby="applicationsGrid_grid_Email">erw@fdg.cc</td><td role="gridcell" style="text-align:center;display:none;" aria-describedby="applicationsGrid_grid_Phone">(564) -56-4-4565</td><td role="gridcell" style="text-align:center;" aria-describedby="applicationsGrid_grid_Waiting">19.0hrs</td><td role="gridcell" style="text-align:center;" aria-describedby="applicationsGrid_grid_Status"><div title="Loan Offer and Loan Agreement has been sent for accepting anf signing" class="loanStatus status-LoanOfferWatingForAccept"></div></td></tr></tbody></table></div></div></div><div class="ui-jqgrid-resize-mark" id="rs_mapplicationsGrid_grid"> </div><div id="applicationsGridgridPager" class="ui-state-default ui-jqgrid-pager ui-corner-bottom" dir="ltr" style="width: 623px;"><div id="pg_applicationsGridgridPager" class="ui-pager-control" role="group"><table cellspacing="0" cellpadding="0" border="0" class="ui-pg-table" style="width:100%;table-layout:fixed;height:100%;" role="row"><tbody><tr><td id="applicationsGridgridPager_left" align="left" style="display: none;"></td><td id="applicationsGridgridPager_center" align="center" style="white-space: pre; width: 245px;"><table cellspacing="0" cellpadding="0" border="0" style="table-layout:auto;" class="ui-pg-table"><tbody><tr><td id="first_applicationsGridgridPager" class="ui-pg-button ui-corner-all ui-state-disabled"><span class="ui-icon ui-icon-seek-first"></span></td><td id="prev_applicationsGridgridPager" class="ui-pg-button ui-corner-all ui-state-disabled"><span class="ui-icon ui-icon-seek-prev"></span></td><td class="ui-pg-button ui-state-disabled" style="width:4px;"><span class="ui-separator"></span></td><td dir="ltr">Page <input class="ui-pg-input" type="text" size="2" maxlength="7" value="0" role="textbox" /> of <span id="sp_1_applicationsGridgridPager">1</span></td><td class="ui-pg-button ui-state-disabled" style="width:4px;"><span class="ui-separator"></span></td><td id="next_applicationsGridgridPager" class="ui-pg-button ui-corner-all ui-state-disabled"><span class="ui-icon ui-icon-seek-next"></span></td><td id="last_applicationsGridgridPager" class="ui-pg-button ui-corner-all ui-state-disabled"><span class="ui-icon ui-icon-seek-end"></span></td></tr></tbody></table></td><td id="applicationsGridgridPager_right" align="right" style="display: none;"><div dir="ltr" style="text-align:right" class="ui-paging-info">View 1 - 1 of 1</div></td></tr></tbody></table></div></div></div></div></w-grid>
+
+    </div>
+    <div class="ng-scope">
+    <div class="split-right-split spl-content col-md-8 col-lg-8" ng-class="getCss()" ng-transclude="">
+            <!-- ngIf: isLoanDefined --><ng-form name="formdetails" ng-if="isLoanDefined" class="ng-pristine ng-scope ng-valid-min ng-valid-max ng-valid-numeric-max-limit ng-valid-pattern ng-valid-validate-minimal-date ng-valid-date ng-valid-maxlength ng-valid-min-age ng-valid-required ng-valid ng-valid-no-docs ng-valid-email ng-valid-mask">
+
+        <div class="panel panel-default">
+            <div class="panel panel-default panel-body loan-details-header">
+                <div class="row bg-header">
+                    <div class="col-sm-6">
+                        <dl class="dl-horizontal">
+    <div ng-transclude="">
+                            <el-field caption="Name" value="Fd Fd" class="ng-scope ng-isolate-scope"><div class="row el-field">
+    <dt style="white-space: normal" class="ng-binding">Name</dt>
+    <dd class="ng-binding">Fd Fd<span ng-transclude=""></span></dd>
+</div></el-field>
+                            <el-field caption="Requested Amount" value="$150000.00" class="ng-scope ng-isolate-scope"><div class="row el-field">
+    <dt style="white-space: normal" class="ng-binding">Requested Amount</dt>
+    <dd class="ng-binding">$150000.00<span ng-transclude=""></span></dd>
+</div></el-field>
+                            
+                        </div>
+</dl>
+                    </div>
+
+                    <div class="col-sm-6">
+                        <dl class="dl-horizontal">
+    <div ng-transclude="">
+                            <el-field caption="Loan Term" value="6 months" class="ng-scope ng-isolate-scope"><div class="row el-field">
+    <dt style="white-space: normal" class="ng-binding">Loan Term</dt>
+    <dd class="ng-binding">6 months<span ng-transclude=""></span></dd>
+</div></el-field>
+                            <el-field caption="Loan Status" value="Loan Offer and Loan Agreement has been sent for accepting anf signing" class="ng-scope ng-isolate-scope"><div class="row el-field">
+    <dt style="white-space: normal" class="ng-binding">Loan Status</dt>
+    <dd class="ng-binding">Loan Offer and Loan Agreement has been sent for accepting anf signing<span ng-transclude=""></span></dd>
+</div></el-field>
+                        </div>
+</dl>
+                    </div>
+                </div>
+                <hr />
+
+                <div ng-show="loan" class="action-panel">
+                    <div class="loan-buttons">
+                        <button class="btn btn-default" ng-click="edit()">Edit</button>
+                        <button class="btn btn-default" ng-click="newContact()">Contact</button>
+                        <button class="btn btn-default ng-hide" ng-click="changeOffer()" ng-show="loan.Status==1 || loan.Status==2">Change Terms</button>
+                    </div>
+                    <div class="nextstep-buttons">
+                        
+                        <span ng-show="loan.Status==1000" class="ng-hide">
+                            <button class="btn toapprove ng-isolate-scope" ng-show="loan" ng-click="changeFacility()" loan="loan">Create Facility</button>
+                        </span>
+                        
+                        <div class="btn-group" ng-show="loan.Status==1001 ">
+                            <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
+                                Loan Offer and Loan Agreement wating for accept
+                                <span class="caret"></span>
+                            </button>
+                            <ul class="dropdown-menu">
+                                <li><a href="" ng-click="loanOfferSigned()">Signed</a></li>
+                                <li><a href="" ng-click="loanOfferRejected()">Rejected</a></li>
+                            </ul>
+                        </div>
+                       
+                    </div>
+                    <loan-back class="pull-right"><button class="btn btn-default loan-back" ng-click="back()"><i class="fa fa-chevron-left"></i> Back to the List</button></loan-back>
+                    <span class="pull-right">
+                        <loan-toolbar search="search" loan="loan" mode="mode" class="ng-isolate-scope">
+
+<!-- ngIf: mode == 'details' -->
+
+
+
+</loan-toolbar>
+                    </span>
+                </div>
+            </div>
+
+            <div ng-show="getUnderwriterComment(loan)" class="loan-comment alert alert-info alert-dismissable ng-binding ng-hide">
+                <button type="button" class="close" data-dismiss="alert" aria-hidden="true">×</button>
+                <strong>Underwriter: </strong> 
+            </div>
+
+            <div class="loan-details-contents">
+
+                <div id="originationTabs" remember-tab="" class="ng-isolate-scope">
+  <ul class="nav nav-tabs" ng-class="{'nav-stacked': vertical, 'nav-justified': justified}" ng-transclude="">
+
+                    <li ng-class="[{active: active, disabled: disabled}, classes]" class="uib-tab nav-item ng-scope ng-isolate-scope active" heading="Customer Details">
+  <a href="" ng-click="select($event)" class="nav-link ng-binding" uib-tab-heading-transclude="">Customer Details</a>
+</li>
+
+                    <li ng-class="[{active: active, disabled: disabled}, classes]" class="uib-tab nav-item ng-scope ng-isolate-scope" heading="Interaction History">
+  <a href="" ng-click="select($event)" class="nav-link ng-binding" uib-tab-heading-transclude="">Interaction History</a>
+</li>
+                    <li ng-class="[{active: active, disabled: disabled}, classes]" class="uib-tab nav-item ng-scope ng-isolate-scope" heading="Schedule">
+  <a href="" ng-click="select($event)" class="nav-link ng-binding" uib-tab-heading-transclude="">Schedule</a>
+</li>
+                    <li ng-class="[{active: active, disabled: disabled}, classes]" class="uib-tab nav-item ng-scope ng-isolate-scope" heading="Documents">
+  <a href="" ng-click="select($event)" class="nav-link ng-binding" uib-tab-heading-transclude="">Documents</a>
+</li>
+                    <!-- ngIf: loan.Collaterals.items.length > 0 -->
+                    <li ng-class="[{active: active, disabled: disabled}, classes]" class="uib-tab nav-item ng-scope ng-isolate-scope" heading="Change History">
+  <a href="" ng-click="select($event)" class="nav-link ng-binding" uib-tab-heading-transclude="">Change History</a>
+</li>
+                    
+                    <!-- ngIf: loan.Status != 1000 --><li ng-class="[{active: active, disabled: disabled}, classes]" class="uib-tab nav-item ng-scope ng-isolate-scope" heading="Facility" ng-if="loan.Status != 1000">
+  <a href="" ng-click="select($event)" class="nav-link ng-binding" uib-tab-heading-transclude="">Facility</a>
+</li><!-- end ngIf: loan.Status != 1000 -->
+                    <li ng-class="[{active: active, disabled: disabled}, classes]" class="uib-tab nav-item ng-scope ng-isolate-scope" heading="Scans">
+  <a href="" ng-click="select($event)" class="nav-link ng-binding" uib-tab-heading-transclude="">Scans</a>
+</li>
+                </ul>
+  <div class="tab-content">
+    <!-- ngRepeat: tab in tabset.tabs --><div class="tab-pane ng-scope active" ng-repeat="tab in tabset.tabs" ng-class="{active: tabset.active === tab.index}" uib-tab-content-transclude="tab">
+    
+                        <form name="customerDetails" class="ng-pristine ng-scope ng-isolate-scope ng-valid-maxlength ng-valid-validate-minimal-date ng-valid-date ng-valid-min-age ng-valid-no-docs ng-valid ng-valid-required ng-valid-pattern ng-valid-email ng-valid-mask" novalidate="" details="loan.CustomerDetails" readonly="readonly">
+    <legend class="icon fa-user">Use of Funds</legend>
+    <ng-form name="UseOfFunds" novalidate="" class="form-block ng-pristine ng-untouched ng-isolate-scope ng-not-empty ng-valid ng-valid-required" ng-model="cd" id="cd.UseOfFunds" readonly="readonly">
+  
+    <div class="row">
+        <div class="col-sm-12 col-lg-6">
+            <div class="form-group form-group-lg ng-isolate-scope label-floating required" id="mg_cd.BusinessSector" ng-class="groupClass" content-id="cd.BusinessSector" model="cd.BusinessSector" static-label="False">
+    <label class="control-label ng-binding" for="cd.BusinessSector">Business Sector</label>
+    <span transclude-parent-scope=""><span id="lbl_cd.BusinessSector" style="display:none" class="ng-scope">Business Sector</span><input type="text" class="form-control ng-pristine ng-untouched ng-scope ng-not-empty ng-valid ng-valid-required" ng-model="cd.BusinessSector" id="cd.BusinessSector" name="cd.BusinessSector" required="" ng-readonly="readonly" aa-val-msg="" aa-field-name="Business Sector" disabled="disabled" readonly="readonly" /><div class="validation-errors ng-scope" aa-val-msg-for="UseOfFunds.cd.BusinessSector"><!-- ngRepeat: msg in errorMessages --><div class="notch notch-border"></div><div class="notch"></div></div></span>
+</div>
+        </div>
+        <div class="col-sm-12 col-lg-6">
+            <div class="form-group form-group-lg ng-isolate-scope label-floating" id="mg_cd.UseOfFunds" ng-class="groupClass" content-id="cd.UseOfFunds" model="cd.UseOfFunds" static-label="False">
+    <label class="control-label ng-binding" for="cd.UseOfFunds">Use of Funds</label>
+    <span transclude-parent-scope=""><span id="lbl_cd.UseOfFunds" style="display:none" class="ng-scope">Use of Funds</span><input type="text" class="form-control ng-pristine ng-untouched ng-scope ng-not-empty ng-valid ng-valid-required" ng-model="cd.UseOfFunds" id="cd.UseOfFunds" name="cd.UseOfFunds" required="" ng-readonly="readonly" aa-val-msg="" aa-field-name="Use of Funds" disabled="disabled" readonly="readonly" /><div class="validation-errors ng-scope" aa-val-msg-for="UseOfFunds.cd.UseOfFunds"><!-- ngRepeat: msg in errorMessages --><div class="notch notch-border"></div><div class="notch"></div></div></span>
+</div>
+        </div>
+    </div>
+</ng-form>        
+   
+    <legend class="icon fa-user">Company Info</legend>
+    <ng-form name="CompanyInfo" novalidate="" class="form-block ng-pristine ng-untouched ng-isolate-scope ng-not-empty ng-valid ng-valid-required" ng-model="cd" id="cd.CompanyInfo" readonly="readonly">
+    <div class="row">
+        <div class="col-sm-12 col-lg-6">
+            <div class="form-group form-group-lg ng-isolate-scope label-floating required" id="mg_cd.CompanyName" ng-class="groupClass" content-id="cd.CompanyName" model="cd.CompanyName" static-label="False">
+    <label class="control-label ng-binding" for="cd.CompanyName">Company Name</label>
+    <span transclude-parent-scope=""><span id="lbl_cd.CompanyName" style="display:none" class="ng-scope">Company Name</span><input type="text" class="form-control ng-pristine ng-untouched ng-scope ng-not-empty ng-valid ng-valid-required" ng-model="cd.CompanyName" id="cd.CompanyName" name="cd.CompanyName" required="" ng-readonly="readonly" aa-val-msg="" aa-field-name="Company Name" disabled="disabled" readonly="readonly" /><div class="validation-errors ng-scope" aa-val-msg-for="CompanyInfo.cd.CompanyName"><!-- ngRepeat: msg in errorMessages --><div class="notch notch-border"></div><div class="notch"></div></div></span>
+</div>
+        </div>
+        <div class="col-sm-12 col-lg-6">
+            <div class="form-group form-group-lg ng-isolate-scope label-floating required" id="mg_cd.SocialSecurityNumber" ng-class="groupClass" content-id="cd.SocialSecurityNumber" model="cd.SocialSecurityNumber" static-label="False">
+    <label class="control-label ng-binding" for="cd.SocialSecurityNumber">Company Registration Number</label>
+    <span transclude-parent-scope=""><span id="lbl_cd.SocialSecurityNumber" style="display:none" class="ng-scope">Company Registration Number</span><input type="text" class="form-control ng-scope ng-not-empty ng-valid ng-valid-required" ui-mask2="**999999" ng-model="cd.SocialSecurityNumber" id="cd.SocialSecurityNumber" name="cd.SocialSecurityNumber" ng-readonly="readonly" required="required" aa-val-msg="" aa-field-name="Company Registration Number" disabled="disabled" readonly="readonly" /><div class="validation-errors ng-scope" aa-val-msg-for="CompanyInfo.cd.SocialSecurityNumber"><!-- ngRepeat: msg in errorMessages --><div class="notch notch-border"></div><div class="notch"></div></div></span>
+</div>
+        </div>
+    </div>
+</ng-form>
+    
+    <legend class="icon fa-map-marker">Registered Company Address</legend>
+    <ng-form name="customerAddress" class="form-block ng-pristine ng-untouched ng-isolate-scope ng-valid-maxlength ng-not-empty ng-valid ng-valid-required" novalidate="" ng-model="cd.Address" id="cd.Address" readonly="readonly">
+    <div class="row">
+        <div class="col-sm-6 col-lg-3">
+            <div class="form-group form-group-lg ng-isolate-scope label-floating required" id="mg_model.Apartment" ng-class="groupClass" content-id="model.Apartment" model="model.Apartment" static-label="False">
+    <label class="control-label ng-binding" for="model.Apartment">House Name or Number</label>
+    <span transclude-parent-scope=""><span id="lbl_model.Apartment" style="display:none" class="ng-scope">House Name or Number</span><input type="text" class="form-control ng-pristine ng-untouched ng-scope ng-valid-maxlength ng-not-empty ng-valid ng-valid-required" ng-model="model.Apartment" id="model.Apartment" name="model.Apartment" required="" ng-readonly="readonly" ng-maxlength="5" aa-val-msg="" aa-field-name="House Name or Number" disabled="disabled" readonly="readonly" /><div class="validation-errors ng-scope" aa-val-msg-for="customerAddress.model.Apartment"><!-- ngRepeat: msg in errorMessages --><div class="notch notch-border"></div><div class="notch"></div></div></span>
+</div>
+        </div>
+        <div class="col-sm-6 col-lg-3">
+            <div class="form-group form-group-lg ng-isolate-scope label-floating required" id="mg_model.Street" ng-class="groupClass" content-id="model.Street" model="model.Street" static-label="False">
+    <label class="control-label ng-binding" for="model.Street">Street</label>
+    <span transclude-parent-scope=""><span id="lbl_model.Street" style="display:none" class="ng-scope">Street</span><input type="text" class="form-control ng-pristine ng-untouched ng-scope ng-not-empty ng-valid ng-valid-required" ng-model="model.Street" id="model.Street" name="model.Street" required="" ng-readonly="readonly" aa-val-msg="" aa-field-name="Street" disabled="disabled" readonly="readonly" /><div class="validation-errors ng-scope" aa-val-msg-for="customerAddress.model.Street"><!-- ngRepeat: msg in errorMessages --><div class="notch notch-border"></div><div class="notch"></div></div></span>
+</div>
+        </div>
+
+        <div class="col-sm-6 col-lg-3">
+            <div class="form-group form-group-lg ng-isolate-scope label-floating required" id="mg_model.City" ng-class="groupClass" content-id="model.City" model="model.City" static-label="False">
+    <label class="control-label ng-binding" for="model.City">City</label>
+    <span transclude-parent-scope=""><span id="lbl_model.City" style="display:none" class="ng-scope">City</span><input type="text" class="form-control ng-pristine ng-untouched ng-scope ng-not-empty ng-valid ng-valid-required" ng-model="model.City" id="model.City" name="model.City" required="" ng-readonly="readonly" aa-val-msg="" aa-field-name="City" disabled="disabled" readonly="readonly" /><div class="validation-errors ng-scope" aa-val-msg-for="customerAddress.model.City"><!-- ngRepeat: msg in errorMessages --><div class="notch notch-border"></div><div class="notch"></div></div></span>
+</div>
+        </div>
+        <div class="col-sm-6 col-lg-3">
+            <div class="form-group form-group-lg ng-isolate-scope label-floating required" id="mg_model.ZipCode" ng-class="groupClass" content-id="model.ZipCode" model="model.ZipCode" static-label="False">
+    <label class="control-label ng-binding" for="model.ZipCode">Post Code</label>
+    <span transclude-parent-scope=""><span id="lbl_model.ZipCode" style="display:none" class="ng-scope">Post Code</span><input type="text" class="form-control ng-pristine ng-untouched ng-scope ng-not-empty ng-valid ng-valid-required" ng-model="model.ZipCode" id="model.ZipCode" name="model.ZipCode" ui-mask2="*******" ng-readonly="readonly" required="" aa-val-msg="" aa-field-name="Post Code" disabled="disabled" readonly="readonly" /><div class="validation-errors ng-scope" aa-val-msg-for="customerAddress.model.ZipCode"><!-- ngRepeat: msg in errorMessages --><div class="notch notch-border"></div><div class="notch"></div></div></span>
+</div>
+        </div>
+    </div>
+</ng-form>
+    
+    <legend class="icon fa-map-marker">Trading Company Address (may be the same as Registered Company Address)</legend>
+    <ng-form name="customerAddress" class="form-block ng-pristine ng-untouched ng-isolate-scope ng-valid-maxlength ng-not-empty ng-valid ng-valid-required" novalidate="" ng-model="cd.SecondAddress" id="cd.SecondAddress" readonly="readonly">
+    <div class="row">
+        <div class="col-sm-6 col-lg-3">
+            <div class="form-group form-group-lg ng-isolate-scope label-floating required" id="mg_model.Apartment" ng-class="groupClass" content-id="model.Apartment" model="model.Apartment" static-label="False">
+    <label class="control-label ng-binding" for="model.Apartment">House Name or Number</label>
+    <span transclude-parent-scope=""><span id="lbl_model.Apartment" style="display:none" class="ng-scope">House Name or Number</span><input type="text" class="form-control ng-pristine ng-untouched ng-scope ng-valid-maxlength ng-not-empty ng-valid ng-valid-required" ng-model="model.Apartment" id="model.Apartment" name="model.Apartment" required="" ng-readonly="readonly" ng-maxlength="5" aa-val-msg="" aa-field-name="House Name or Number" disabled="disabled" readonly="readonly" /><div class="validation-errors ng-scope" aa-val-msg-for="customerAddress.model.Apartment"><!-- ngRepeat: msg in errorMessages --><div class="notch notch-border"></div><div class="notch"></div></div></span>
+</div>
+        </div>
+        <div class="col-sm-6 col-lg-3">
+            <div class="form-group form-group-lg ng-isolate-scope label-floating required" id="mg_model.Street" ng-class="groupClass" content-id="model.Street" model="model.Street" static-label="False">
+    <label class="control-label ng-binding" for="model.Street">Street</label>
+    <span transclude-parent-scope=""><span id="lbl_model.Street" style="display:none" class="ng-scope">Street</span><input type="text" class="form-control ng-pristine ng-untouched ng-scope ng-not-empty ng-valid ng-valid-required" ng-model="model.Street" id="model.Street" name="model.Street" required="" ng-readonly="readonly" aa-val-msg="" aa-field-name="Street" disabled="disabled" readonly="readonly" /><div class="validation-errors ng-scope" aa-val-msg-for="customerAddress.model.Street"><!-- ngRepeat: msg in errorMessages --><div class="notch notch-border"></div><div class="notch"></div></div></span>
+</div>
+        </div>
+
+        <div class="col-sm-6 col-lg-3">
+            <div class="form-group form-group-lg ng-isolate-scope label-floating required" id="mg_model.City" ng-class="groupClass" content-id="model.City" model="model.City" static-label="False">
+    <label class="control-label ng-binding" for="model.City">City</label>
+    <span transclude-parent-scope=""><span id="lbl_model.City" style="display:none" class="ng-scope">City</span><input type="text" class="form-control ng-pristine ng-untouched ng-scope ng-not-empty ng-valid ng-valid-required" ng-model="model.City" id="model.City" name="model.City" required="" ng-readonly="readonly" aa-val-msg="" aa-field-name="City" disabled="disabled" readonly="readonly" /><div class="validation-errors ng-scope" aa-val-msg-for="customerAddress.model.City"><!-- ngRepeat: msg in errorMessages --><div class="notch notch-border"></div><div class="notch"></div></div></span>
+</div>
+        </div>
+        <div class="col-sm-6 col-lg-3">
+            <div class="form-group form-group-lg ng-isolate-scope label-floating required" id="mg_model.ZipCode" ng-class="groupClass" content-id="model.ZipCode" model="model.ZipCode" static-label="False">
+    <label class="control-label ng-binding" for="model.ZipCode">Post Code</label>
+    <span transclude-parent-scope=""><span id="lbl_model.ZipCode" style="display:none" class="ng-scope">Post Code</span><input type="text" class="form-control ng-pristine ng-untouched ng-scope ng-not-empty ng-valid ng-valid-required" ng-model="model.ZipCode" id="model.ZipCode" name="model.ZipCode" ui-mask2="*******" ng-readonly="readonly" required="" aa-val-msg="" aa-field-name="Post Code" disabled="disabled" readonly="readonly" /><div class="validation-errors ng-scope" aa-val-msg-for="customerAddress.model.ZipCode"><!-- ngRepeat: msg in errorMessages --><div class="notch notch-border"></div><div class="notch"></div></div></span>
+</div>
+        </div>
+    </div>
+</ng-form>
+
+    <legend class="icon fa-university">Company Bank Account</legend>
+    <ng-form name="customerAddress" class="form-block ng-pristine ng-untouched ng-isolate-scope ng-not-empty ng-valid ng-valid-required" novalidate="" ng-model="cd.Bank" id="cd.Bank" readonly="readonly">
+    <div class="row">
+        <div class="col-sm-6 col-lg-3">
+            <div class="form-group form-group-lg ng-isolate-scope label-floating required" id="mg_model.BankName" ng-class="groupClass" content-id="model.BankName" model="model.BankName" static-label="False">
+    <label class="control-label ng-binding" for="model.BankName">Bank Name</label>
+    <span transclude-parent-scope=""><span id="lbl_model.BankName" style="display:none" class="ng-scope">Bank Name</span><input type="text" class="form-control ng-pristine ng-untouched ng-scope ng-not-empty ng-valid ng-valid-required" ng-model="model.BankName" id="model.BankName" name="model.BankName" ng-readonly="readonly" required="" aa-val-msg="" aa-field-name="Bank Name" disabled="disabled" readonly="readonly" /><div class="validation-errors ng-scope" aa-val-msg-for="customerAddress.model.BankName"><!-- ngRepeat: msg in errorMessages --><div class="notch notch-border"></div><div class="notch"></div></div></span>
+</div>
+
+        </div>
+        <div class="col-sm-6 col-lg-3">
+            <div class="form-group form-group-lg ng-isolate-scope label-floating required" id="mg_model.AccountName" ng-class="groupClass" content-id="model.AccountName" model="model.AccountName" static-label="False">
+    <label class="control-label ng-binding" for="model.AccountName">Account Name</label>
+    <span transclude-parent-scope=""><span id="lbl_model.AccountName" style="display:none" class="ng-scope">Account Name</span><input type="text" class="form-control ng-pristine ng-untouched ng-scope ng-not-empty ng-valid ng-valid-required" ng-model="model.AccountName" id="model.AccountName" name="model.AccountName" ng-readonly="readonly" required="" aa-val-msg="" aa-field-name="Account Name" disabled="disabled" readonly="readonly" /><div class="validation-errors ng-scope" aa-val-msg-for="customerAddress.model.AccountName"><!-- ngRepeat: msg in errorMessages --><div class="notch notch-border"></div><div class="notch"></div></div></span>
+</div>
+
+        </div>
+        <div class="col-sm-6 col-lg-3">
+            <div class="form-group form-group-lg ng-isolate-scope label-floating required" id="mg_model.Iban" ng-class="groupClass" content-id="model.Iban" model="model.Iban" static-label="False">
+    <label class="control-label ng-binding" for="model.Iban">IBAN</label>
+    <span transclude-parent-scope=""><span id="lbl_model.Iban" style="display:none" class="ng-scope">IBAN</span><input type="text" class="form-control ng-pristine ng-untouched ng-scope ng-not-empty ng-valid ng-valid-required" ng-model="model.Iban" id="model.Iban" name="model.Iban" ng-readonly="readonly" ui-mask2="aa99 aaaa 9999 9999 9999 99" required="" aa-val-msg="" aa-field-name="IBAN" disabled="disabled" readonly="readonly" /><div class="validation-errors ng-scope" aa-val-msg-for="customerAddress.model.Iban"><!-- ngRepeat: msg in errorMessages --><div class="notch notch-border"></div><div class="notch"></div></div></span>
+</div>
+        </div>
+        <div class="col-sm-6 col-lg-3">
+            <div class="form-group form-group-lg ng-isolate-scope label-floating required" id="mg_model.BicSwift" ng-class="groupClass" content-id="model.BicSwift" model="model.BicSwift" static-label="False">
+    <label class="control-label ng-binding" for="model.BicSwift">BIC/SWIFT</label>
+    <span transclude-parent-scope=""><span id="lbl_model.BicSwift" style="display:none" class="ng-scope">BIC/SWIFT</span><input type="text" class="form-control ng-pristine ng-untouched ng-scope ng-not-empty ng-valid ng-valid-required" ng-model="model.BicSwift" id="model.BicSwift" name="model.BicSwift" ng-readonly="readonly" ui-mask2="aaaa aa ** ***" required="" aa-val-msg="" aa-field-name="BIC/SWIFT" disabled="disabled" readonly="readonly" /><div class="validation-errors ng-scope" aa-val-msg-for="customerAddress.model.BicSwift"><!-- ngRepeat: msg in errorMessages --><div class="notch notch-border"></div><div class="notch"></div></div></span>
+</div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-sm-6 col-lg-3">
+            <div class="form-group form-group-lg ng-isolate-scope label-floating required" id="mg_model.AccountNumber" ng-class="groupClass" content-id="model.AccountNumber" model="model.AccountNumber" static-label="False">
+    <label class="control-label ng-binding" for="model.AccountNumber">Account Number</label>
+    <span transclude-parent-scope=""><span id="lbl_model.AccountNumber" style="display:none" class="ng-scope">Account Number</span><input type="text" class="form-control ng-pristine ng-untouched ng-scope ng-not-empty ng-valid ng-valid-required" ng-model="model.AccountNumber" id="model.AccountNumber" name="model.AccountNumber" ng-readonly="readonly" ui-mask2="99999999" required="" aa-val-msg="" aa-field-name="Account Number" disabled="disabled" readonly="readonly" /><div class="validation-errors ng-scope" aa-val-msg-for="customerAddress.model.AccountNumber"><!-- ngRepeat: msg in errorMessages --><div class="notch notch-border"></div><div class="notch"></div></div></span>
+</div>
+        </div>
+        <div class="col-sm-6 col-lg-3">
+            <div class="form-group form-group-lg ng-isolate-scope label-floating required" id="mg_model.SortCode" ng-class="groupClass" content-id="model.SortCode" model="model.SortCode" static-label="False">
+    <label class="control-label ng-binding" for="model.SortCode">Sort Code</label>
+    <span transclude-parent-scope=""><span id="lbl_model.SortCode" style="display:none" class="ng-scope">Sort Code</span><input type="text" class="form-control ng-pristine ng-untouched ng-scope ng-not-empty ng-valid ng-valid-required" ng-model="model.SortCode" id="model.SortCode" name="model.SortCode" ng-readonly="readonly" ui-mask2="99-99-99" required="" aa-val-msg="" aa-field-name="Sort Code" disabled="disabled" readonly="readonly" /><div class="validation-errors ng-scope" aa-val-msg-for="customerAddress.model.SortCode"><!-- ngRepeat: msg in errorMessages --><div class="notch notch-border"></div><div class="notch"></div></div></span>
+</div>
+        </div>
+    </div>
+   
+</ng-form>
+
+    <legend class="icon fa-asterisk">Shareholders with more than a 25% shareholding</legend>
+    <ng-form name="CustomerAdditionalInfo" class="form-block ng-pristine ng-valid ng-untouched ng-isolate-scope ng-not-empty" novalidate="" ng-model="cd.Shareholders" id="cd.OwnerInfo" readonly="readonly">
+
+    <editable-table items="cd" confirm-delete="Are you sure?" item-template="customerOwnershipItemTemplate" class="ng-isolate-scope"><!-- ngIf: items.length --><table class="table table-bordered table-striped ng-scope" style="table-layout: fixed; width: 100%;" ng-if="items.length">
+                <thead>
+                    <tr>
+                        <th>Email</th>
+                        <th>Full Name</th>
+                        <th>Gender</th>
+                        <th>Date of Birth</th>
+                        <th>National Insurance #</th>
+                        <th>Main Phone</th>
+                        <th>Alternative Phone</th>
+                        <th>Address</th>
+                        <!-- ngIf: !ro() -->
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- ngRepeat: item in items | orderBy:'-HireDate' --><tr ng-repeat="item in items | orderBy:'-HireDate'" class="ng-scope">
+                        <td style="word-wrap: break-word;" class="ng-binding">342@gf.cc</td>
+                        <td style="word-wrap: break-word;" class="ng-binding">Re null Re</td>
+                        <td style="word-wrap: break-word;" class="ng-binding">1</td>
+                        <td style="word-wrap: break-word;" class="ng-binding">01/01/1980</td>
+                        <td style="word-wrap: break-word;" class="ng-binding">342-34-2343</td>
+                        <td class="ng-binding">324-324-3243</td>
+                        <td class="ng-binding"></td>
+                        <td style="word-wrap: break-word;" class="ng-binding">House:342, Street:324, City:324, PostCode:4323243</td>
+                        <!-- ngIf: !ro() -->
+                    </tr><!-- end ngRepeat: item in items | orderBy:'-HireDate' -->
+                </tbody>
+            </table><!-- end ngIf: items.length -->
+
+            <!-- ngIf: !items.length -->
+            <!-- ngIf: !ro() &&  !items.length -->
+            <!-- ngIf: !ro() && items.length --></editable-table>
+
+</ng-form>
+    
+    <legend class="icon fa-asterisk">Directors</legend>
+    <ng-form name="CustomerAdditionalInfo" class="form-block ng-pristine ng-valid ng-untouched ng-isolate-scope ng-not-empty" novalidate="" ng-model="cd.Directors" id="cd.ownerInfo" readonly="readonly">
+
+    <editable-table items="cd" confirm-delete="Are you sure?" item-template="customerOwnershipItemTemplate" class="ng-isolate-scope"><!-- ngIf: items.length --><table class="table table-bordered table-striped ng-scope" style="table-layout: fixed; width: 100%;" ng-if="items.length">
+                <thead>
+                    <tr>
+                        <th>Email</th>
+                        <th>Full Name</th>
+                        <th>Gender</th>
+                        <th>Date of Birth</th>
+                        <th>National Insurance #</th>
+                        <th>Main Phone</th>
+                        <th>Alternative Phone</th>
+                        <th>Address</th>
+                        <!-- ngIf: !ro() -->
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- ngRepeat: item in items | orderBy:'-HireDate' --><tr ng-repeat="item in items | orderBy:'-HireDate'" class="ng-scope">
+                        <td style="word-wrap: break-word;" class="ng-binding">432@fg.cc</td>
+                        <td style="word-wrap: break-word;" class="ng-binding">Er Re Re</td>
+                        <td style="word-wrap: break-word;" class="ng-binding">2</td>
+                        <td style="word-wrap: break-word;" class="ng-binding">01/01/1980</td>
+                        <td style="word-wrap: break-word;" class="ng-binding">980-90-8908</td>
+                        <td class="ng-binding">908-908-9809</td>
+                        <td class="ng-binding"></td>
+                        <td style="word-wrap: break-word;" class="ng-binding">House:98, Street:980908, City:980980, PostCode:9809089</td>
+                        <!-- ngIf: !ro() -->
+                    </tr><!-- end ngRepeat: item in items | orderBy:'-HireDate' -->
+                </tbody>
+            </table><!-- end ngIf: items.length -->
+
+            <!-- ngIf: !items.length -->
+            <!-- ngIf: !ro() &&  !items.length -->
+            <!-- ngIf: !ro() && items.length --></editable-table>
+
+</ng-form>
+
+    <legend class="icon fa-user">Personal Information</legend>
+    <ng-form name="CustomerPersonal" novalidate="" class="form-block ng-pristine ng-untouched ng-isolate-scope ng-valid-validate-minimal-date ng-valid-date ng-valid-min-age ng-not-empty ng-valid ng-valid-required ng-valid-pattern ng-valid-email ng-valid-mask" ng-model="cd" id="cd.customerPersonal" readonly="readonly">
+    <div class="row">
+        <div class="col-sm-12 col-lg-6">
+            <div class="form-group form-group-lg ng-isolate-scope label-floating required" id="mg_cd.Email" ng-class="groupClass" content-id="cd.Email" model="cd.Email" static-label="False">
+    <label class="control-label ng-binding" for="cd.Email">Email</label>
+    <span transclude-parent-scope=""><span id="lbl_cd.Email" style="display:none" class="ng-scope">Email</span><input type="email" class="form-control ng-pristine ng-untouched ng-valid ng-scope ng-not-empty ng-valid-email ng-valid-required ng-valid-pattern" ng-pattern="/^(([^&lt;&gt;()[\]\,;:\s@\&quot;]+(\.[^&lt;&gt;()[\]\\.,;:\s@\&quot;]+_)*)|(\&quot;.+\&quot;))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/" ng-model="cd.Email" name="cd.Email" id="cd.Email" required="required" ng-readonly="readonly" aa-val-msg="" aa-field-name="Email" disabled="disabled" readonly="readonly" /><div class="validation-errors ng-scope" aa-val-msg-for="CustomerPersonal.cd.Email"><!-- ngRepeat: msg in errorMessages --><div class="notch notch-border"></div><div class="notch"></div></div></span>
+</div>
+        </div>
+        <div class="col-sm-6 col-lg-3">
+            <div class="form-group form-group-lg ng-isolate-scope label-floating required" id="mg_cd.FirstName" ng-class="groupClass" content-id="cd.FirstName" model="cd.FirstName" static-label="False">
+    <label class="control-label ng-binding" for="cd.FirstName">First Name</label>
+    <span transclude-parent-scope=""><span id="lbl_cd.FirstName" style="display:none" class="ng-scope">First Name</span><input type="text" class="form-control ng-pristine ng-untouched ng-valid ng-scope ng-not-empty ng-valid-required ng-valid-pattern" ng-pattern="/^[a-zA-Z]+([\- '][a-zA-Z]+)*$/" pattern-msg="{0} can contain only Latin letters." capitalize-first="" ng-model="cd.FirstName" id="cd.FirstName" name="cd.FirstName" required="required" ng-readonly="readonly" aa-val-msg="" aa-field-name="First Name" disabled="disabled" readonly="readonly" /><div class="validation-errors ng-scope" aa-val-msg-for="CustomerPersonal.cd.FirstName"><!-- ngRepeat: msg in errorMessages --><div class="notch notch-border"></div><div class="notch"></div></div></span>
+</div>
+        </div>
+        <div class="col-sm-6 col-lg-3">
+            <div class="form-group form-group-lg ng-isolate-scope label-floating" id="mg_cd.MiddleName" ng-class="groupClass" content-id="cd.MiddleName" model="cd.MiddleName" static-label="False">
+    <label class="control-label ng-binding" for="cd.MiddleName">Middle Name</label>
+    <span transclude-parent-scope=""><span id="lbl_cd.MiddleName" style="display:none" class="ng-scope">Middle Name</span><input type="text" class="form-control ng-pristine ng-untouched ng-valid ng-scope ng-empty ng-valid-pattern" ng-pattern="/^[a-zA-Z]+([\- '][a-zA-Z]+)*$/" pattern-msg="{0} can contain only Latin letters." capitalize-first="" ng-model="cd.MiddleName" id="cd.MiddleName" name="cd.MiddleName" ng-readonly="readonly" aa-val-msg="" aa-field-name="Middle Name" disabled="disabled" readonly="readonly" /><div class="validation-errors ng-scope" aa-val-msg-for="CustomerPersonal.cd.MiddleName"><!-- ngRepeat: msg in errorMessages --><div class="notch notch-border"></div><div class="notch"></div></div></span>
+</div>
+        </div>
+        <div class="col-sm-10 col-lg-4">
+            <div class="form-group form-group-lg ng-isolate-scope label-floating required" id="mg_cd.LastName" ng-class="groupClass" content-id="cd.LastName" model="cd.LastName" static-label="False">
+    <label class="control-label ng-binding" for="cd.LastName">Last Name</label>
+    <span transclude-parent-scope=""><span id="lbl_cd.LastName" style="display:none" class="ng-scope">Last Name</span><input type="text" class="form-control ng-pristine ng-untouched ng-valid ng-scope ng-not-empty ng-valid-required ng-valid-pattern" ng-pattern="/^[a-zA-Z]+([\- '][a-zA-Z]+)*$/" pattern-msg="{0} can contain only Latin letters." capitalize-first="" ng-model="cd.LastName" id="cd.LastName" name="cd.LastName" required="required" ng-readonly="readonly" aa-val-msg="" aa-field-name="Last Name" disabled="disabled" readonly="readonly" /><div class="validation-errors ng-scope" aa-val-msg-for="CustomerPersonal.cd.LastName"><!-- ngRepeat: msg in errorMessages --><div class="notch notch-border"></div><div class="notch"></div></div></span>
+</div>
+        </div>
+
+    </div>
+    <div class="row">
+
+        <div class="col-sm-6 col-lg-3">
+            <div class="form-group form-group-lg ng-isolate-scope label-floating required" id="mg_cd.Gender" ng-class="groupClass" content-id="cd.Gender" model="cd.Gender" static-label="False">
+    <label class="control-label ng-binding" for="cd.Gender">Gender</label>
+    <span transclude-parent-scope=""><span id="lbl_cd.Gender" style="display:none" class="ng-scope">Gender</span><select class="form-control ng-pristine ng-untouched ng-scope ng-not-empty ng-valid ng-valid-required" ng-model="cd.Gender" id="cd.Gender" name="cd.Gender" required="" ng-readonly="readonly" aa-val-msg="" aa-field-name="Gender" ng-options="item.key as item.translatedValue for item in [{&quot;key&quot;:1,&quot;value&quot;:&quot;Male&quot;,&quot;translatedValue&quot;:&quot;Male&quot;},{&quot;key&quot;:2,&quot;value&quot;:&quot;Female&quot;,&quot;translatedValue&quot;:&quot;Female&quot;}]" disabled="disabled" readonly="readonly"><option label="Male" value="number:1" selected="selected">Male</option><option label="Female" value="number:2">Female</option></select><div class="validation-errors ng-scope" aa-val-msg-for="CustomerPersonal.cd.Gender"><!-- ngRepeat: msg in errorMessages --><div class="notch notch-border"></div><div class="notch"></div></div></span>
+</div>
+        </div>
+
+        <div class="col-sm-6 col-lg-3">
+            <div class="form-group form-group-lg ng-isolate-scope label-floating required" id="mg_cd.BirthDate" ng-class="groupClass" content-id="cd.BirthDate" model="cd.BirthDate" static-label="False">
+    <label class="control-label ng-binding" for="cd.BirthDate">Date of Birth</label>
+    <span transclude-parent-scope=""><span id="lbl_cd.BirthDate" style="display:none" class="ng-scope">Date of Birth</span><div ng-model="cd.BirthDate" id="cd.BirthDate" required="required" min-age="18" readonly="readonly" aa-field-name="Date of Birth" class="ng-pristine ng-untouched ng-scope ng-isolate-scope ng-not-empty ng-valid ng-valid-required">
+    <ng-form class="input-group date ng-pristine ng-valid-validate-minimal-date ng-valid-date ng-valid-min-age ng-hide ng-valid ng-valid-required" name="dateEditor" ng-show="!readonly">
+        <input type="text" show-button-bar="false" id="cd.BirthDate_int" ng-model="model" name="dateField" ng-required="required" validate-day="" validate-minimal-date="" aa-val-msg="" aa-field-name-finder="" attrs-setter="" uib-datepicker-popup="MM/dd/yyyy" ui-mask2="99/99/9999" show-weeks="false" class="form-control ng-pristine ng-untouched ng-isolate-scope ng-valid-validate-minimal-date ng-valid-date ng-valid-min-age ng-not-empty ng-valid ng-valid-required" is-open="opened" tabindex="" ng-show="!hideInput" min-age-msg="Unacceptable borrower’s age" required="required" /><div uib-datepicker-popup-wrap="" ng-model="date" ng-change="dateSelection(date)" template-url="uib/template/datepickerPopup/popup.html" class="ng-pristine ng-untouched ng-valid ng-scope ng-not-empty"><!-- ngIf: isOpen -->
+</div>
+        <span class="input-group-addon" ng-click="open($event)">
+            <i class="glyphicon glyphicon-calendar"></i>
+        </span>
+    </ng-form><div class="validation-errors ng-scope" aa-val-msg-for="dateEditor.dateField"><!-- ngRepeat: msg in errorMessages --><div class="notch notch-border"></div><div class="notch"></div></div>
+    <input ng-show="readonly" value="01/01/1988" class="form-control" ng-readonly="readonly" disabled="disabled" readonly="readonly" />
+</div></span>
+</div>
+        </div>
+        <div class="col-sm-12 col-lg-6">
+            <div class="form-group form-group-lg ng-isolate-scope label-floating required" id="mg_cd.NationalInsuranceNumber" ng-class="groupClass" content-id="cd.NationalInsuranceNumber" model="cd.NationalInsuranceNumber" static-label="False">
+    <label class="control-label ng-binding" for="cd.NationalInsuranceNumber">National Insurance #</label>
+    <span transclude-parent-scope=""><span id="lbl_cd.NationalInsuranceNumber" style="display:none" class="ng-scope">National Insurance #</span><input type="text" class="form-control ng-scope ng-not-empty ng-valid ng-valid-required" ui-mask2="999-99-9999" ng-model="cd.NationalInsuranceNumber" id="cd.NationalInsuranceNumber" name="cd.NationalInsuranceNumber" ng-readonly="readonly" required="required" aa-val-msg="" aa-field-name="National Insurance #" disabled="disabled" readonly="readonly" /><div class="validation-errors ng-scope" aa-val-msg-for="CustomerPersonal.cd.NationalInsuranceNumber"><!-- ngRepeat: msg in errorMessages --><div class="notch notch-border"></div><div class="notch"></div></div></span>
+</div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-sm-6">
+            <div class="form-group form-group-lg ng-isolate-scope label-floating required" id="mg_cd.Phone" ng-class="groupClass" content-id="cd.Phone" model="cd.Phone" static-label="False">
+    <label class="control-label ng-binding" for="cd.Phone">Main Phone</label>
+    <span transclude-parent-scope=""><span id="lbl_cd.Phone" style="display:none" class="ng-scope">Main Phone</span><phone ng-model="cd.Phone" id="cd.Phone" ext="cd.unused" required="true" readonly="readonly" class="ng-pristine ng-untouched ng-valid ng-scope ng-isolate-scope ng-not-empty ng-valid-required"><div>
+    <ng-form ng-show="!readonly" name="phoneForm" class="phone ng-pristine ng-valid ng-valid-required ng-valid-mask ng-hide" ng-class="{phoneInput: external, 'form-control': external}">
+        
+        <input type="text" id="cd.Phone_int" ng-class="{'form-control': !external}" ng-model="model" ui-mask2="999-99-9999" name="phoneInput" ng-required="required" tabindex="" aa-val-msg="" class="ng-pristine ng-untouched ng-valid ng-not-empty ng-valid-required form-control" required="required" />
+        <input type="text" ng-show="external" ng-model="ext" ui-mask="ext.?9?9?9?9?9" placeholder="ext._____" tabindex="" class="md-ignor ng-pristine ng-untouched ng-valid ng-valid-mask ng-empty ng-hide" />
+    </ng-form><div class="validation-errors ng-scope" aa-val-msg-for="phoneForm.phoneInput"><!-- ngRepeat: msg in errorMessages --><div class="notch notch-border"></div><div class="notch"></div></div>
+    <div ng-show="readonly" style="display: inline-flex">
+        <input value="564-564-4565" class="form-control" readonly="readonly" disabled="disabled" />
+        <input value="" ng-show="external &amp;&amp; ext" class="form-control ng-pristine ng-untouched ng-valid ng-valid-mask ng-empty ng-hide" ng-model="ext" ui-mask="ext.?9?9?9?9?9" disabled="disabled" placeholder="ext._____" />
+    </div>
+</div></phone></span>
+</div>
+        </div>
+
+        <div class="col-sm-6">
+            <div class="form-group form-group-lg ng-isolate-scope label-floating" id="mg_cd.AlternativePhone" ng-class="groupClass" content-id="cd.AlternativePhone" model="cd.AlternativePhone" static-label="False">
+    <label class="control-label ng-binding" for="cd.AlternativePhone">Alternative Phone</label>
+    <span transclude-parent-scope=""><span id="lbl_cd.AlternativePhone" style="display:none" class="ng-scope">Alternative Phone</span><bonds-phone ng-model="cd.AlternativePhone" id="cd.AlternativePhone" ext="cd.unused" readonly="readonly" class="ng-pristine ng-untouched ng-valid ng-scope ng-isolate-scope ng-empty"><div>
+    <ng-form ng-show="!readonly" name="phoneForm" class="phone ng-pristine ng-valid ng-valid-mask ng-valid-required ng-hide" ng-class="phoneInput">
+        <input type="text" id="cd.AlternativePhone_int" class="form-control ng-pristine ng-untouched ng-valid ng-valid-mask ng-empty ng-valid-required" ng-model="model" ui-mask="999-99-99?9?9?9" name="phoneInput" ng-required="isRequired" tabindex="" aa-val-msg="" placeholder="___-__-_____" />
+    </ng-form><div class="validation-errors ng-scope" aa-val-msg-for="phoneForm.phoneInput"><!-- ngRepeat: msg in errorMessages --><div class="notch notch-border"></div><div class="notch"></div></div>
+    <input value="" ng-show="readonly" class="form-control" readonly="readonly" disabled="disabled" />
+</div></bonds-phone></span>
+</div>
+        </div>
+    </div>
+</ng-form>
+
+
+    <legend class="icon fa-map-marker">Authorized Person's Address</legend>
+    <ng-form name="customerAddress" class="form-block ng-pristine ng-untouched ng-isolate-scope ng-valid-maxlength ng-not-empty ng-valid ng-valid-required" novalidate="" ng-model="cd.AuthorizedPersonAddress" id="cd.AuthorizedPersonAddress" readonly="readonly">
+    <div class="row">
+        <div class="col-sm-6 col-lg-3">
+            <div class="form-group form-group-lg ng-isolate-scope label-floating required" id="mg_model.Apartment" ng-class="groupClass" content-id="model.Apartment" model="model.Apartment" static-label="False">
+    <label class="control-label ng-binding" for="model.Apartment">House Name or Number</label>
+    <span transclude-parent-scope=""><span id="lbl_model.Apartment" style="display:none" class="ng-scope">House Name or Number</span><input type="text" class="form-control ng-pristine ng-untouched ng-scope ng-valid-maxlength ng-not-empty ng-valid ng-valid-required" ng-model="model.Apartment" id="model.Apartment" name="model.Apartment" required="" ng-readonly="readonly" ng-maxlength="5" aa-val-msg="" aa-field-name="House Name or Number" disabled="disabled" readonly="readonly" /><div class="validation-errors ng-scope" aa-val-msg-for="customerAddress.model.Apartment"><!-- ngRepeat: msg in errorMessages --><div class="notch notch-border"></div><div class="notch"></div></div></span>
+</div>
+        </div>
+        <div class="col-sm-6 col-lg-3">
+            <div class="form-group form-group-lg ng-isolate-scope label-floating required" id="mg_model.Street" ng-class="groupClass" content-id="model.Street" model="model.Street" static-label="False">
+    <label class="control-label ng-binding" for="model.Street">Street</label>
+    <span transclude-parent-scope=""><span id="lbl_model.Street" style="display:none" class="ng-scope">Street</span><input type="text" class="form-control ng-pristine ng-untouched ng-scope ng-not-empty ng-valid ng-valid-required" ng-model="model.Street" id="model.Street" name="model.Street" required="" ng-readonly="readonly" aa-val-msg="" aa-field-name="Street" disabled="disabled" readonly="readonly" /><div class="validation-errors ng-scope" aa-val-msg-for="customerAddress.model.Street"><!-- ngRepeat: msg in errorMessages --><div class="notch notch-border"></div><div class="notch"></div></div></span>
+</div>
+        </div>
+
+        <div class="col-sm-6 col-lg-3">
+            <div class="form-group form-group-lg ng-isolate-scope label-floating required" id="mg_model.City" ng-class="groupClass" content-id="model.City" model="model.City" static-label="False">
+    <label class="control-label ng-binding" for="model.City">City</label>
+    <span transclude-parent-scope=""><span id="lbl_model.City" style="display:none" class="ng-scope">City</span><input type="text" class="form-control ng-pristine ng-untouched ng-scope ng-not-empty ng-valid ng-valid-required" ng-model="model.City" id="model.City" name="model.City" required="" ng-readonly="readonly" aa-val-msg="" aa-field-name="City" disabled="disabled" readonly="readonly" /><div class="validation-errors ng-scope" aa-val-msg-for="customerAddress.model.City"><!-- ngRepeat: msg in errorMessages --><div class="notch notch-border"></div><div class="notch"></div></div></span>
+</div>
+        </div>
+        <div class="col-sm-6 col-lg-3">
+            <div class="form-group form-group-lg ng-isolate-scope label-floating required" id="mg_model.ZipCode" ng-class="groupClass" content-id="model.ZipCode" model="model.ZipCode" static-label="False">
+    <label class="control-label ng-binding" for="model.ZipCode">Post Code</label>
+    <span transclude-parent-scope=""><span id="lbl_model.ZipCode" style="display:none" class="ng-scope">Post Code</span><input type="text" class="form-control ng-pristine ng-untouched ng-scope ng-not-empty ng-valid ng-valid-required" ng-model="model.ZipCode" id="model.ZipCode" name="model.ZipCode" ui-mask2="*******" ng-readonly="readonly" required="" aa-val-msg="" aa-field-name="Post Code" disabled="disabled" readonly="readonly" /><div class="validation-errors ng-scope" aa-val-msg-for="customerAddress.model.ZipCode"><!-- ngRepeat: msg in errorMessages --><div class="notch notch-border"></div><div class="notch"></div></div></span>
+</div>
+        </div>
+    </div>
+</ng-form>
+
+
+    <!-- ngIf: useCollaterals() -->
+
+    <!-- ngIf: !readonly -->
+    
+    <ng-form name="customerDocument" class="ng-pristine ng-untouched ng-isolate-scope ng-not-empty ng-valid-required ng-valid ng-valid-no-docs" novalidate="" ng-model="cd.MemorandumAssociation" button-title="The Memorandum of Association" required="required" readonly="readonly">
+    <!-- ngIf: isFelt == false -->
+
+    <!-- ngIf: !readonly -->
+
+</ng-form>
+    <ng-form name="customerDocument" class="ng-pristine ng-untouched ng-isolate-scope ng-not-empty ng-valid-required ng-valid ng-valid-no-docs" novalidate="" ng-model="cd.CertificateIncorporation" button-title="The Certificate of Incorporation" required="required" readonly="readonly">
+    <!-- ngIf: isFelt == false -->
+
+    <!-- ngIf: !readonly -->
+
+</ng-form>
+    <ng-form name="customerDocument" class="ng-pristine ng-untouched ng-isolate-scope ng-not-empty ng-valid-required ng-valid ng-valid-no-docs" novalidate="" ng-model="cd.ArticlesAssociation" button-title="The Articles of Association" required="required" readonly="readonly">
+    <!-- ngIf: isFelt == false -->
+
+    <!-- ngIf: !readonly -->
+
+</ng-form>
+    <ng-form name="customerDocument" class="ng-pristine ng-untouched ng-isolate-scope ng-not-empty ng-valid-required ng-valid ng-valid-no-docs" novalidate="" ng-model="cd.ShareholdersRegister" button-title="The shareholders register naming the shareholders in the company" required="required" readonly="readonly">
+    <!-- ngIf: isFelt == false -->
+
+    <!-- ngIf: !readonly -->
+
+</ng-form>
+    <ng-form name="customerDocument" class="ng-pristine ng-untouched ng-isolate-scope ng-not-empty ng-valid-required ng-valid ng-valid-no-docs" novalidate="" ng-model="cd.AuditedAccounts" button-title="The company’s latest audited accounts" required="required" readonly="readonly">
+    <!-- ngIf: isFelt == false -->
+
+    <!-- ngIf: !readonly -->
+
+</ng-form>
+    <ng-form name="customerDocument" class="ng-pristine ng-untouched ng-isolate-scope ng-not-empty ng-valid-required ng-valid ng-valid-no-docs" novalidate="" ng-model="cd.BankStatement" button-title="A bank statement, in the name of the company (no more than 3 months old)" required="required" readonly="readonly">
+    <!-- ngIf: isFelt == false -->
+
+    <!-- ngIf: !readonly -->
+
+</ng-form>
+
+</form>
+                    </div><!-- end ngRepeat: tab in tabset.tabs --><div class="tab-pane ng-scope" ng-repeat="tab in tabset.tabs" ng-class="{active: tabset.active === tab.index}" uib-tab-content-transclude="tab">
+    
+                        <contacts loan="loan" class="ng-scope ng-isolate-scope">
+<div class="row contact-list">
+
+    <div class="col-sm-6">
+        <dl class="dl-horizontal">
+    <div ng-transclude="">
+            <el-field caption="Email" value="erw@fdg.cc" class="ng-scope ng-isolate-scope"><div class="row el-field">
+    <dt style="white-space: normal" class="ng-binding">Email</dt>
+    <dd class="ng-binding">erw@fdg.cc<span ng-transclude=""></span></dd>
+</div></el-field>
+            <el-field caption="Work Phone" value="-" class="ng-scope ng-isolate-scope"><div class="row el-field">
+    <dt style="white-space: normal" class="ng-binding">Work Phone</dt>
+    <dd class="ng-binding">-<span ng-transclude=""></span></dd>
+</div></el-field>
+        </div>
+</dl>
+    </div>
+
+    <div class="col-sm-6">
+        <dl class="dl-horizontal">
+    <div ng-transclude="">
+            <el-field caption="Main Phone" value="564-564-4565" class="ng-scope ng-isolate-scope"><div class="row el-field">
+    <dt style="white-space: normal" class="ng-binding">Main Phone</dt>
+    <dd class="ng-binding">564-564-4565<span ng-transclude=""></span></dd>
+</div></el-field>
+            <el-field caption="Alternative Phone" value="-" class="ng-scope ng-isolate-scope"><div class="row el-field">
+    <dt style="white-space: normal" class="ng-binding">Alternative Phone</dt>
+    <dd class="ng-binding">-<span ng-transclude=""></span></dd>
+</div></el-field>
+        </div>
+</dl>
+    </div>
+</div>
+
+<!-- ngIf: loan.Contacts --><hr ng-if="loan.Contacts" class="hidden ng-scope" /><!-- end ngIf: loan.Contacts -->
+
+<!-- ngIf: loan.Contacts --><h4 ng-if="loan.Contacts" class="ng-scope">Contact History</h4><!-- end ngIf: loan.Contacts -->
+
+<!-- ngIf: loan.Contacts --><table class="table table-bordered table-striped ng-scope" ng-if="loan.Contacts">
+    <thead>
+        <tr>
+
+            <th>Date</th>
+            <th>Collaborator</th>
+            <th>Purpose</th>
+            <th>Method</th>
+            <th>Result</th>
+            <th>Comment</th>
+            <th ng-show="showPtp" class="ng-hide">PTP Date</th>
+            <th ng-show="showPtp" class="ng-hide">PTP Amount</th>
+        </tr>
+    </thead>
+    <tbody>
+        <!-- ngRepeat: c in loan.Contacts | orderBy:'Date' -->
+    </tbody>
+</table><!-- end ngIf: loan.Contacts -->
+</contacts>
+                    </div><!-- end ngRepeat: tab in tabset.tabs --><div class="tab-pane ng-scope" ng-repeat="tab in tabset.tabs" ng-class="{active: tabset.active === tab.index}" uib-tab-content-transclude="tab">
+    
+                        <loan-schedule-new loan="loan" light-mode="true" class="ng-scope ng-isolate-scope">
+<table class="table table-bordered table-striped table-installments">
+    <thead>
+    <tr>
+        <th class="center-head">#</th>
+        <th class="center-head">Date</th>
+        <th class="center-head">Total</th>
+        <th class="center-head">Principal</th>
+        <th class="center-head">Interest</th>
+        <!-- ngIf: showAdditionalColumns -->
+        <!-- ngIf: isAdFeeEnabled -->
+        <!-- ngIf: showAdditionalColumns -->
+        <!-- ngIf: showAdditionalColumns -->
+        <!-- ngIf: showAdditionalColumns -->
+        <!-- ngIf: showAdditionalColumns -->
+
+    </tr>
+    </thead>
+
+    <tbody>
+    <!-- ngRepeat: p in installments --><tr ng-repeat="p in installments" ng-class="{'success': p.isCurrent == true, 'danger':p.Status == 4}" class="ng-scope success">
+        <td class="ng-binding">1</td>
+        <td class="ng-binding">03/28/2017</td>
+        <td class="money ng-binding">$1250.00</td>
+        <td class="money ng-binding">$0.00</td>
+        <td class="money ng-binding">$1250.00</td>
+        <!-- ngIf: showAdditionalColumns -->
+        <!-- ngIf: isAdFeeEnabled -->
+        <!-- ngIf: showAdditionalColumns -->
+        <!-- ngIf: showAdditionalColumns -->
+        <!-- ngIf: showAdditionalColumns -->
+        <!-- ngIf: showAdditionalColumns -->
+    </tr><!-- end ngRepeat: p in installments --><tr ng-repeat="p in installments" ng-class="{'success': p.isCurrent == true, 'danger':p.Status == 4}" class="ng-scope">
+        <td class="ng-binding">2</td>
+        <td class="ng-binding">04/28/2017</td>
+        <td class="money ng-binding">$1250.00</td>
+        <td class="money ng-binding">$0.00</td>
+        <td class="money ng-binding">$1250.00</td>
+        <!-- ngIf: showAdditionalColumns -->
+        <!-- ngIf: isAdFeeEnabled -->
+        <!-- ngIf: showAdditionalColumns -->
+        <!-- ngIf: showAdditionalColumns -->
+        <!-- ngIf: showAdditionalColumns -->
+        <!-- ngIf: showAdditionalColumns -->
+    </tr><!-- end ngRepeat: p in installments --><tr ng-repeat="p in installments" ng-class="{'success': p.isCurrent == true, 'danger':p.Status == 4}" class="ng-scope">
+        <td class="ng-binding">3</td>
+        <td class="ng-binding">05/28/2017</td>
+        <td class="money ng-binding">$1250.00</td>
+        <td class="money ng-binding">$0.00</td>
+        <td class="money ng-binding">$1250.00</td>
+        <!-- ngIf: showAdditionalColumns -->
+        <!-- ngIf: isAdFeeEnabled -->
+        <!-- ngIf: showAdditionalColumns -->
+        <!-- ngIf: showAdditionalColumns -->
+        <!-- ngIf: showAdditionalColumns -->
+        <!-- ngIf: showAdditionalColumns -->
+    </tr><!-- end ngRepeat: p in installments --><tr ng-repeat="p in installments" ng-class="{'success': p.isCurrent == true, 'danger':p.Status == 4}" class="ng-scope">
+        <td class="ng-binding">4</td>
+        <td class="ng-binding">06/28/2017</td>
+        <td class="money ng-binding">$1250.00</td>
+        <td class="money ng-binding">$0.00</td>
+        <td class="money ng-binding">$1250.00</td>
+        <!-- ngIf: showAdditionalColumns -->
+        <!-- ngIf: isAdFeeEnabled -->
+        <!-- ngIf: showAdditionalColumns -->
+        <!-- ngIf: showAdditionalColumns -->
+        <!-- ngIf: showAdditionalColumns -->
+        <!-- ngIf: showAdditionalColumns -->
+    </tr><!-- end ngRepeat: p in installments --><tr ng-repeat="p in installments" ng-class="{'success': p.isCurrent == true, 'danger':p.Status == 4}" class="ng-scope">
+        <td class="ng-binding">5</td>
+        <td class="ng-binding">07/28/2017</td>
+        <td class="money ng-binding">$151250.00</td>
+        <td class="money ng-binding">$150000.00</td>
+        <td class="money ng-binding">$1250.00</td>
+        <!-- ngIf: showAdditionalColumns -->
+        <!-- ngIf: isAdFeeEnabled -->
+        <!-- ngIf: showAdditionalColumns -->
+        <!-- ngIf: showAdditionalColumns -->
+        <!-- ngIf: showAdditionalColumns -->
+        <!-- ngIf: showAdditionalColumns -->
+    </tr><!-- end ngRepeat: p in installments -->
+    </tbody>
+</table>
+
+<!-- ngIf: !lightMode --></loan-schedule-new>
+                    </div><!-- end ngRepeat: tab in tabset.tabs --><div class="tab-pane ng-scope" ng-repeat="tab in tabset.tabs" ng-class="{active: tabset.active === tab.index}" uib-tab-content-transclude="tab">
+    
+                        <loan-documents loan="loan" readonly="readonly" class="ng-scope ng-isolate-scope">
+
+<div class="panel panel-default inner ng-isolate-scope" caption="System Documents">
+    <div class="panel-heading">
+        <h4 class="ng-binding">System Documents</h4>
+    </div>
+    <div class="panel-body" ng-transclude="">
+    <system-documents loan="loan" class="ng-scope ng-isolate-scope">
+<table class="table table-bordered">
+    <thead>
+        <tr>
+            <th>Filename</th>
+            <th>Date</th>
+            <th></th>            
+        </tr>
+    </thead>
+    <tbody>
+    <!-- ngRepeat: doc in docs --><tr ng-repeat="doc in docs" class="ng-scope">
+        <td class="ng-binding">
+            Loan Agreement
+        </td>
+        <td class="ng-binding">
+            On Demand
+        </td>
+        <td>
+            <!-- ngIf: doc.CanUpload -->
+            <a ng-href="Api/DocTypes/Download?docTypeId=LoanAgreement&amp;LoanId=1" target="_blank" href="Api/DocTypes/Download?docTypeId=LoanAgreement&amp;LoanId=1">Download</a>
+        </td>
+    </tr><!-- end ngRepeat: doc in docs --><tr ng-repeat="doc in docs" class="ng-scope">
+        <td class="ng-binding">
+            Drawdown Request
+        </td>
+        <td class="ng-binding">
+            On Demand
+        </td>
+        <td>
+            <!-- ngIf: doc.CanUpload -->
+            <a ng-href="Api/DocTypes/Download?docTypeId=Drawdown Request&amp;LoanId=1" target="_blank" href="Api/DocTypes/Download?docTypeId=Drawdown Request&amp;LoanId=1">Download</a>
+        </td>
+    </tr><!-- end ngRepeat: doc in docs --><tr ng-repeat="doc in docs" class="ng-scope">
+        <td class="ng-binding">
+            Loan Offer
+        </td>
+        <td class="ng-binding">
+            On Demand
+        </td>
+        <td>
+            <!-- ngIf: doc.CanUpload -->
+            <a ng-href="Api/DocTypes/Download?docTypeId=Loan Offer&amp;LoanId=1" target="_blank" href="Api/DocTypes/Download?docTypeId=Loan Offer&amp;LoanId=1">Download</a>
+        </td>
+    </tr><!-- end ngRepeat: doc in docs -->
+    </tbody>
+</table></system-documents>
+</div>
+</div>
+
+
+<div class="panel panel-default inner ng-isolate-scope" caption="Uploaded by Customer">
+    <div class="panel-heading">
+        <h4 class="ng-binding">Uploaded by Customer</h4>
+    </div>
+    <div class="panel-body" ng-transclude="">
+    
+    
+    <ng-form name="customerDocument" class="ng-pristine ng-untouched ng-scope ng-isolate-scope ng-not-empty ng-valid-required ng-valid ng-valid-no-docs" novalidate="" ng-model="loan.CustomerDetails.MemorandumAssociation" button-title="The Memorandum of Association" required="required" readonly="readonly">
+    <!-- ngIf: isFelt == false -->
+
+    <!-- ngIf: !readonly --><doc-upload ng-if="!readonly" ng-model="doc" readonly="readonly" button-title="title" class="ng-pristine ng-untouched ng-valid ng-scope ng-isolate-scope ng-not-empty"><div class="form-block">
+
+    <ul class="documents-list">
+        <div class="row">
+            <!-- ngRepeat: doc in model --><li ng-repeat="doc in model" class="col-sm-6 col-md-6 col-lg-3 ng-scope">
+                <div class="col-xs-4 col-sm-6 col-md-5">
+                    <a href="Api/Documents/Download?id=564899ed-5061-41a2-adf5-58fab6d94d86" target="_blank">
+                        
+                        <img ng-src="Api/Documents/Thumbnail?id=564899ed-5061-41a2-adf5-58fab6d94d86" src="Api/Documents/Thumbnail?id=564899ed-5061-41a2-adf5-58fab6d94d86" />
+                    </a>
+                </div>
+                <div class="document-btn">
+                    <div class="col-xs-8 col-sm-6 col-md-7">
+                        <p>
+                            <a href="Api/Documents/Download?id=564899ed-5061-41a2-adf5-58fab6d94d86" target="_blank">
+                                <span class="doc-name ellipsis ng-binding">cats.jpg</span>
+                            </a>
+                    </p></div>
+
+                    <div class="text-center">
+                        <!-- ngIf: !cannotDelete && !readonly && !(customerSide && !doc.Document.UserUploaded) --><button style="margin-bottom: 10px" ng-if="!cannotDelete &amp;&amp; !readonly &amp;&amp; !(customerSide &amp;&amp; !doc.Document.UserUploaded)" ng-click="deleteFile(doc.Id)" class="btn btn-sm btn-danger ng-scope">	<i class="fa fa-trash"></i> Delete</button><!-- end ngIf: !cannotDelete && !readonly && !(customerSide && !doc.Document.UserUploaded) -->
+                    
+
+                    </div>
+                </div>
+
+            </li><!-- end ngRepeat: doc in model -->
+        </div>
+    </ul>
+
+
+    <!-- ngIf: !readonly --><div ng-if="!readonly" class="uploader-container ng-scope">
+
+        <label>
+            <span class="btn ng-binding">The Memorandum of Association</span>
+
+            <input type="file" ng-click="resetInputValue($event)" name="file_source" ng-file-select="onFileSelect($files)" multiple="" />
+        </label>
+    </div><!-- end ngIf: !readonly -->
+</div>
+</doc-upload><!-- end ngIf: !readonly -->
+
+</ng-form>
+    <ng-form name="customerDocument" class="ng-pristine ng-untouched ng-scope ng-isolate-scope ng-not-empty ng-valid-required ng-valid ng-valid-no-docs" novalidate="" ng-model="loan.CustomerDetails.CertificateIncorporation" button-title="The Certificate of Incorporation" required="required" readonly="readonly">
+    <!-- ngIf: isFelt == false -->
+
+    <!-- ngIf: !readonly --><doc-upload ng-if="!readonly" ng-model="doc" readonly="readonly" button-title="title" class="ng-pristine ng-untouched ng-valid ng-scope ng-isolate-scope ng-not-empty"><div class="form-block">
+
+    <ul class="documents-list">
+        <div class="row">
+            <!-- ngRepeat: doc in model --><li ng-repeat="doc in model" class="col-sm-6 col-md-6 col-lg-3 ng-scope">
+                <div class="col-xs-4 col-sm-6 col-md-5">
+                    <a href="Api/Documents/Download?id=442bf95b-15fc-4ea0-87ef-5f97efc30c2a" target="_blank">
+                        
+                        <img ng-src="Api/Documents/Thumbnail?id=442bf95b-15fc-4ea0-87ef-5f97efc30c2a" src="Api/Documents/Thumbnail?id=442bf95b-15fc-4ea0-87ef-5f97efc30c2a" />
+                    </a>
+                </div>
+                <div class="document-btn">
+                    <div class="col-xs-8 col-sm-6 col-md-7">
+                        <p>
+                            <a href="Api/Documents/Download?id=442bf95b-15fc-4ea0-87ef-5f97efc30c2a" target="_blank">
+                                <span class="doc-name ellipsis ng-binding">cats.jpg</span>
+                            </a>
+                    </p></div>
+
+                    <div class="text-center">
+                        <!-- ngIf: !cannotDelete && !readonly && !(customerSide && !doc.Document.UserUploaded) --><button style="margin-bottom: 10px" ng-if="!cannotDelete &amp;&amp; !readonly &amp;&amp; !(customerSide &amp;&amp; !doc.Document.UserUploaded)" ng-click="deleteFile(doc.Id)" class="btn btn-sm btn-danger ng-scope">	<i class="fa fa-trash"></i> Delete</button><!-- end ngIf: !cannotDelete && !readonly && !(customerSide && !doc.Document.UserUploaded) -->
+                    
+
+                    </div>
+                </div>
+
+            </li><!-- end ngRepeat: doc in model -->
+        </div>
+    </ul>
+
+
+    <!-- ngIf: !readonly --><div ng-if="!readonly" class="uploader-container ng-scope">
+
+        <label>
+            <span class="btn ng-binding">The Certificate of Incorporation</span>
+
+            <input type="file" ng-click="resetInputValue($event)" name="file_source" ng-file-select="onFileSelect($files)" multiple="" />
+        </label>
+    </div><!-- end ngIf: !readonly -->
+</div>
+</doc-upload><!-- end ngIf: !readonly -->
+
+</ng-form>
+    <ng-form name="customerDocument" class="ng-pristine ng-untouched ng-scope ng-isolate-scope ng-not-empty ng-valid-required ng-valid ng-valid-no-docs" novalidate="" ng-model="loan.CustomerDetails.ArticlesAssociation" button-title="The Articles of Association" required="required" readonly="readonly">
+    <!-- ngIf: isFelt == false -->
+
+    <!-- ngIf: !readonly --><doc-upload ng-if="!readonly" ng-model="doc" readonly="readonly" button-title="title" class="ng-pristine ng-untouched ng-valid ng-scope ng-isolate-scope ng-not-empty"><div class="form-block">
+
+    <ul class="documents-list">
+        <div class="row">
+            <!-- ngRepeat: doc in model --><li ng-repeat="doc in model" class="col-sm-6 col-md-6 col-lg-3 ng-scope">
+                <div class="col-xs-4 col-sm-6 col-md-5">
+                    <a href="Api/Documents/Download?id=df3be035-8954-4cea-a682-fb09fe49f829" target="_blank">
+                        
+                        <img ng-src="Api/Documents/Thumbnail?id=df3be035-8954-4cea-a682-fb09fe49f829" src="Api/Documents/Thumbnail?id=df3be035-8954-4cea-a682-fb09fe49f829" />
+                    </a>
+                </div>
+                <div class="document-btn">
+                    <div class="col-xs-8 col-sm-6 col-md-7">
+                        <p>
+                            <a href="Api/Documents/Download?id=df3be035-8954-4cea-a682-fb09fe49f829" target="_blank">
+                                <span class="doc-name ellipsis ng-binding">cats.jpg</span>
+                            </a>
+                    </p></div>
+
+                    <div class="text-center">
+                        <!-- ngIf: !cannotDelete && !readonly && !(customerSide && !doc.Document.UserUploaded) --><button style="margin-bottom: 10px" ng-if="!cannotDelete &amp;&amp; !readonly &amp;&amp; !(customerSide &amp;&amp; !doc.Document.UserUploaded)" ng-click="deleteFile(doc.Id)" class="btn btn-sm btn-danger ng-scope">	<i class="fa fa-trash"></i> Delete</button><!-- end ngIf: !cannotDelete && !readonly && !(customerSide && !doc.Document.UserUploaded) -->
+                    
+
+                    </div>
+                </div>
+
+            </li><!-- end ngRepeat: doc in model -->
+        </div>
+    </ul>
+
+
+    <!-- ngIf: !readonly --><div ng-if="!readonly" class="uploader-container ng-scope">
+
+        <label>
+            <span class="btn ng-binding">The Articles of Association</span>
+
+            <input type="file" ng-click="resetInputValue($event)" name="file_source" ng-file-select="onFileSelect($files)" multiple="" />
+        </label>
+    </div><!-- end ngIf: !readonly -->
+</div>
+</doc-upload><!-- end ngIf: !readonly -->
+
+</ng-form>
+    <ng-form name="customerDocument" class="ng-pristine ng-untouched ng-scope ng-isolate-scope ng-not-empty ng-valid-required ng-valid ng-valid-no-docs" novalidate="" ng-model="loan.CustomerDetails.ShareholdersRegister" button-title="The shareholders register naming the shareholders in the company" required="required" readonly="readonly">
+    <!-- ngIf: isFelt == false -->
+
+    <!-- ngIf: !readonly --><doc-upload ng-if="!readonly" ng-model="doc" readonly="readonly" button-title="title" class="ng-pristine ng-untouched ng-valid ng-scope ng-isolate-scope ng-not-empty"><div class="form-block">
+
+    <ul class="documents-list">
+        <div class="row">
+            <!-- ngRepeat: doc in model --><li ng-repeat="doc in model" class="col-sm-6 col-md-6 col-lg-3 ng-scope">
+                <div class="col-xs-4 col-sm-6 col-md-5">
+                    <a href="Api/Documents/Download?id=a803f879-6a19-4033-8d04-0633acad6e92" target="_blank">
+                        
+                        <img ng-src="Api/Documents/Thumbnail?id=a803f879-6a19-4033-8d04-0633acad6e92" src="Api/Documents/Thumbnail?id=a803f879-6a19-4033-8d04-0633acad6e92" />
+                    </a>
+                </div>
+                <div class="document-btn">
+                    <div class="col-xs-8 col-sm-6 col-md-7">
+                        <p>
+                            <a href="Api/Documents/Download?id=a803f879-6a19-4033-8d04-0633acad6e92" target="_blank">
+                                <span class="doc-name ellipsis ng-binding">cats.jpg</span>
+                            </a>
+                    </p></div>
+
+                    <div class="text-center">
+                        <!-- ngIf: !cannotDelete && !readonly && !(customerSide && !doc.Document.UserUploaded) --><button style="margin-bottom: 10px" ng-if="!cannotDelete &amp;&amp; !readonly &amp;&amp; !(customerSide &amp;&amp; !doc.Document.UserUploaded)" ng-click="deleteFile(doc.Id)" class="btn btn-sm btn-danger ng-scope">	<i class="fa fa-trash"></i> Delete</button><!-- end ngIf: !cannotDelete && !readonly && !(customerSide && !doc.Document.UserUploaded) -->
+                    
+
+                    </div>
+                </div>
+
+            </li><!-- end ngRepeat: doc in model -->
+        </div>
+    </ul>
+
+
+    <!-- ngIf: !readonly --><div ng-if="!readonly" class="uploader-container ng-scope">
+
+        <label>
+            <span class="btn ng-binding">The shareholders register naming the shareholders in the company</span>
+
+            <input type="file" ng-click="resetInputValue($event)" name="file_source" ng-file-select="onFileSelect($files)" multiple="" />
+        </label>
+    </div><!-- end ngIf: !readonly -->
+</div>
+</doc-upload><!-- end ngIf: !readonly -->
+
+</ng-form>
+    <ng-form name="customerDocument" class="ng-pristine ng-untouched ng-scope ng-isolate-scope ng-not-empty ng-valid-required ng-valid ng-valid-no-docs" novalidate="" ng-model="loan.CustomerDetails.AuditedAccounts" button-title="The company’s latest audited accounts" required="required" readonly="readonly">
+    <!-- ngIf: isFelt == false -->
+
+    <!-- ngIf: !readonly --><doc-upload ng-if="!readonly" ng-model="doc" readonly="readonly" button-title="title" class="ng-pristine ng-untouched ng-valid ng-scope ng-isolate-scope ng-not-empty"><div class="form-block">
+
+    <ul class="documents-list">
+        <div class="row">
+            <!-- ngRepeat: doc in model --><li ng-repeat="doc in model" class="col-sm-6 col-md-6 col-lg-3 ng-scope">
+                <div class="col-xs-4 col-sm-6 col-md-5">
+                    <a href="Api/Documents/Download?id=765ba585-21c1-47ef-9f90-72b3252736fc" target="_blank">
+                        
+                        <img ng-src="Api/Documents/Thumbnail?id=765ba585-21c1-47ef-9f90-72b3252736fc" src="Api/Documents/Thumbnail?id=765ba585-21c1-47ef-9f90-72b3252736fc" />
+                    </a>
+                </div>
+                <div class="document-btn">
+                    <div class="col-xs-8 col-sm-6 col-md-7">
+                        <p>
+                            <a href="Api/Documents/Download?id=765ba585-21c1-47ef-9f90-72b3252736fc" target="_blank">
+                                <span class="doc-name ellipsis ng-binding">cats.jpg</span>
+                            </a>
+                    </p></div>
+
+                    <div class="text-center">
+                        <!-- ngIf: !cannotDelete && !readonly && !(customerSide && !doc.Document.UserUploaded) --><button style="margin-bottom: 10px" ng-if="!cannotDelete &amp;&amp; !readonly &amp;&amp; !(customerSide &amp;&amp; !doc.Document.UserUploaded)" ng-click="deleteFile(doc.Id)" class="btn btn-sm btn-danger ng-scope">	<i class="fa fa-trash"></i> Delete</button><!-- end ngIf: !cannotDelete && !readonly && !(customerSide && !doc.Document.UserUploaded) -->
+                    
+
+                    </div>
+                </div>
+
+            </li><!-- end ngRepeat: doc in model -->
+        </div>
+    </ul>
+
+
+    <!-- ngIf: !readonly --><div ng-if="!readonly" class="uploader-container ng-scope">
+
+        <label>
+            <span class="btn ng-binding">The company’s latest audited accounts</span>
+
+            <input type="file" ng-click="resetInputValue($event)" name="file_source" ng-file-select="onFileSelect($files)" multiple="" />
+        </label>
+    </div><!-- end ngIf: !readonly -->
+</div>
+</doc-upload><!-- end ngIf: !readonly -->
+
+</ng-form>
+    <ng-form name="customerDocument" class="ng-pristine ng-untouched ng-scope ng-isolate-scope ng-not-empty ng-valid-required ng-valid ng-valid-no-docs" novalidate="" ng-model="loan.CustomerDetails.BankStatement" button-title="A bank statement, in the name of the company (no more than 3 months old)" required="required" readonly="readonly">
+    <!-- ngIf: isFelt == false -->
+
+    <!-- ngIf: !readonly --><doc-upload ng-if="!readonly" ng-model="doc" readonly="readonly" button-title="title" class="ng-pristine ng-untouched ng-valid ng-scope ng-isolate-scope ng-not-empty"><div class="form-block">
+
+    <ul class="documents-list">
+        <div class="row">
+            <!-- ngRepeat: doc in model --><li ng-repeat="doc in model" class="col-sm-6 col-md-6 col-lg-3 ng-scope">
+                <div class="col-xs-4 col-sm-6 col-md-5">
+                    <a href="Api/Documents/Download?id=27356a1f-32dc-4a5c-8aca-7ffbb845d17f" target="_blank">
+                        
+                        <img ng-src="Api/Documents/Thumbnail?id=27356a1f-32dc-4a5c-8aca-7ffbb845d17f" src="Api/Documents/Thumbnail?id=27356a1f-32dc-4a5c-8aca-7ffbb845d17f" />
+                    </a>
+                </div>
+                <div class="document-btn">
+                    <div class="col-xs-8 col-sm-6 col-md-7">
+                        <p>
+                            <a href="Api/Documents/Download?id=27356a1f-32dc-4a5c-8aca-7ffbb845d17f" target="_blank">
+                                <span class="doc-name ellipsis ng-binding">cats.jpg</span>
+                            </a>
+                    </p></div>
+
+                    <div class="text-center">
+                        <!-- ngIf: !cannotDelete && !readonly && !(customerSide && !doc.Document.UserUploaded) --><button style="margin-bottom: 10px" ng-if="!cannotDelete &amp;&amp; !readonly &amp;&amp; !(customerSide &amp;&amp; !doc.Document.UserUploaded)" ng-click="deleteFile(doc.Id)" class="btn btn-sm btn-danger ng-scope">	<i class="fa fa-trash"></i> Delete</button><!-- end ngIf: !cannotDelete && !readonly && !(customerSide && !doc.Document.UserUploaded) -->
+                    
+
+                    </div>
+                </div>
+
+            </li><!-- end ngRepeat: doc in model -->
+        </div>
+    </ul>
+
+
+    <!-- ngIf: !readonly --><div ng-if="!readonly" class="uploader-container ng-scope">
+
+        <label>
+            <span class="btn ng-binding">A bank statement, in the name of the company (no more than 3 months old)</span>
+
+            <input type="file" ng-click="resetInputValue($event)" name="file_source" ng-file-select="onFileSelect($files)" multiple="" />
+        </label>
+    </div><!-- end ngIf: !readonly -->
+</div>
+</doc-upload><!-- end ngIf: !readonly -->
+
+</ng-form>
+    <h2 class="ng-scope">Shareholder's documents</h2>
+    <!-- ngRepeat: item in loan.CustomerDetails.Shareholders --><div ng-repeat="item in loan.CustomerDetails.Shareholders" class="ng-scope">
+
+        <ng-form name="customerDocument" class="ng-pristine ng-valid ng-untouched ng-isolate-scope ng-not-empty ng-valid-required ng-valid-no-docs" novalidate="" ng-model="item.ValidDocs" button-title="Valid passport, driving licence or national identity card" required="required" readonly="readonly">
+    <!-- ngIf: isFelt == false -->
+
+    <!-- ngIf: !readonly --><doc-upload ng-if="!readonly" ng-model="doc" readonly="readonly" button-title="title" class="ng-pristine ng-untouched ng-valid ng-scope ng-isolate-scope ng-not-empty"><div class="form-block">
+
+    <ul class="documents-list">
+        <div class="row">
+            <!-- ngRepeat: doc in model --><li ng-repeat="doc in model" class="col-sm-6 col-md-6 col-lg-3 ng-scope">
+                <div class="col-xs-4 col-sm-6 col-md-5">
+                    <a href="Api/Documents/Download?id=70f412ea-3430-47b8-8d41-5e3dd7d1c4f6" target="_blank">
+                        
+                        <img ng-src="Api/Documents/Thumbnail?id=70f412ea-3430-47b8-8d41-5e3dd7d1c4f6" src="Api/Documents/Thumbnail?id=70f412ea-3430-47b8-8d41-5e3dd7d1c4f6" />
+                    </a>
+                </div>
+                <div class="document-btn">
+                    <div class="col-xs-8 col-sm-6 col-md-7">
+                        <p>
+                            <a href="Api/Documents/Download?id=70f412ea-3430-47b8-8d41-5e3dd7d1c4f6" target="_blank">
+                                <span class="doc-name ellipsis ng-binding">cats.jpg</span>
+                            </a>
+                    </p></div>
+
+                    <div class="text-center">
+                        <!-- ngIf: !cannotDelete && !readonly && !(customerSide && !doc.Document.UserUploaded) --><button style="margin-bottom: 10px" ng-if="!cannotDelete &amp;&amp; !readonly &amp;&amp; !(customerSide &amp;&amp; !doc.Document.UserUploaded)" ng-click="deleteFile(doc.Id)" class="btn btn-sm btn-danger ng-scope">	<i class="fa fa-trash"></i> Delete</button><!-- end ngIf: !cannotDelete && !readonly && !(customerSide && !doc.Document.UserUploaded) -->
+                    
+
+                    </div>
+                </div>
+
+            </li><!-- end ngRepeat: doc in model -->
+        </div>
+    </ul>
+
+
+    <!-- ngIf: !readonly --><div ng-if="!readonly" class="uploader-container ng-scope">
+
+        <label>
+            <span class="btn ng-binding">Valid passport, driving licence or national identity card</span>
+
+            <input type="file" ng-click="resetInputValue($event)" name="file_source" ng-file-select="onFileSelect($files)" multiple="" />
+        </label>
+    </div><!-- end ngIf: !readonly -->
+</div>
+</doc-upload><!-- end ngIf: !readonly -->
+
+</ng-form>
+        <ng-form name="customerDocument" class="ng-pristine ng-valid ng-untouched ng-isolate-scope ng-not-empty ng-valid-required ng-valid-no-docs" novalidate="" ng-model="item.BankStatements" button-title="A recent Utility bill/bank statement (no more than 3 months old)" required="required" readonly="readonly">
+    <!-- ngIf: isFelt == false -->
+
+    <!-- ngIf: !readonly --><doc-upload ng-if="!readonly" ng-model="doc" readonly="readonly" button-title="title" class="ng-pristine ng-untouched ng-valid ng-scope ng-isolate-scope ng-not-empty"><div class="form-block">
+
+    <ul class="documents-list">
+        <div class="row">
+            <!-- ngRepeat: doc in model --><li ng-repeat="doc in model" class="col-sm-6 col-md-6 col-lg-3 ng-scope">
+                <div class="col-xs-4 col-sm-6 col-md-5">
+                    <a href="Api/Documents/Download?id=58743cbe-6a52-443b-b632-2ce37ab2671b" target="_blank">
+                        
+                        <img ng-src="Api/Documents/Thumbnail?id=58743cbe-6a52-443b-b632-2ce37ab2671b" src="Api/Documents/Thumbnail?id=58743cbe-6a52-443b-b632-2ce37ab2671b" />
+                    </a>
+                </div>
+                <div class="document-btn">
+                    <div class="col-xs-8 col-sm-6 col-md-7">
+                        <p>
+                            <a href="Api/Documents/Download?id=58743cbe-6a52-443b-b632-2ce37ab2671b" target="_blank">
+                                <span class="doc-name ellipsis ng-binding">cats.jpg</span>
+                            </a>
+                    </p></div>
+
+                    <div class="text-center">
+                        <!-- ngIf: !cannotDelete && !readonly && !(customerSide && !doc.Document.UserUploaded) --><button style="margin-bottom: 10px" ng-if="!cannotDelete &amp;&amp; !readonly &amp;&amp; !(customerSide &amp;&amp; !doc.Document.UserUploaded)" ng-click="deleteFile(doc.Id)" class="btn btn-sm btn-danger ng-scope">	<i class="fa fa-trash"></i> Delete</button><!-- end ngIf: !cannotDelete && !readonly && !(customerSide && !doc.Document.UserUploaded) -->
+                    
+
+                    </div>
+                </div>
+
+            </li><!-- end ngRepeat: doc in model -->
+        </div>
+    </ul>
+
+
+    <!-- ngIf: !readonly --><div ng-if="!readonly" class="uploader-container ng-scope">
+
+        <label>
+            <span class="btn ng-binding">A recent Utility bill/bank statement (no more than 3 months old)</span>
+
+            <input type="file" ng-click="resetInputValue($event)" name="file_source" ng-file-select="onFileSelect($files)" multiple="" />
+        </label>
+    </div><!-- end ngIf: !readonly -->
+</div>
+</doc-upload><!-- end ngIf: !readonly -->
+
+</ng-form>
+    </div><!-- end ngRepeat: item in loan.CustomerDetails.Shareholders -->
+
+    <h2 class="ng-scope">Directors's documents</h2>
+    <!-- ngRepeat: item in loan.CustomerDetails.Directors --><div ng-repeat="item in loan.CustomerDetails.Directors" class="ng-scope">
+        <ng-form name="customerDocument" class="ng-pristine ng-valid ng-untouched ng-isolate-scope ng-not-empty ng-valid-required ng-valid-no-docs" novalidate="" ng-model="item.ValidDocs" button-title="Valid passport, driving licence or national identity card" required="required" readonly="readonly">
+    <!-- ngIf: isFelt == false -->
+
+    <!-- ngIf: !readonly --><doc-upload ng-if="!readonly" ng-model="doc" readonly="readonly" button-title="title" class="ng-pristine ng-untouched ng-valid ng-scope ng-isolate-scope ng-not-empty"><div class="form-block">
+
+    <ul class="documents-list">
+        <div class="row">
+            <!-- ngRepeat: doc in model --><li ng-repeat="doc in model" class="col-sm-6 col-md-6 col-lg-3 ng-scope">
+                <div class="col-xs-4 col-sm-6 col-md-5">
+                    <a href="Api/Documents/Download?id=e0f25cae-72cd-4923-bdea-a392bd9410e6" target="_blank">
+                        
+                        <img ng-src="Api/Documents/Thumbnail?id=e0f25cae-72cd-4923-bdea-a392bd9410e6" src="Api/Documents/Thumbnail?id=e0f25cae-72cd-4923-bdea-a392bd9410e6" />
+                    </a>
+                </div>
+                <div class="document-btn">
+                    <div class="col-xs-8 col-sm-6 col-md-7">
+                        <p>
+                            <a href="Api/Documents/Download?id=e0f25cae-72cd-4923-bdea-a392bd9410e6" target="_blank">
+                                <span class="doc-name ellipsis ng-binding">cats.jpg</span>
+                            </a>
+                    </p></div>
+
+                    <div class="text-center">
+                        <!-- ngIf: !cannotDelete && !readonly && !(customerSide && !doc.Document.UserUploaded) --><button style="margin-bottom: 10px" ng-if="!cannotDelete &amp;&amp; !readonly &amp;&amp; !(customerSide &amp;&amp; !doc.Document.UserUploaded)" ng-click="deleteFile(doc.Id)" class="btn btn-sm btn-danger ng-scope">	<i class="fa fa-trash"></i> Delete</button><!-- end ngIf: !cannotDelete && !readonly && !(customerSide && !doc.Document.UserUploaded) -->
+                    
+
+                    </div>
+                </div>
+
+            </li><!-- end ngRepeat: doc in model -->
+        </div>
+    </ul>
+
+
+    <!-- ngIf: !readonly --><div ng-if="!readonly" class="uploader-container ng-scope">
+
+        <label>
+            <span class="btn ng-binding">Valid passport, driving licence or national identity card</span>
+
+            <input type="file" ng-click="resetInputValue($event)" name="file_source" ng-file-select="onFileSelect($files)" multiple="" />
+        </label>
+    </div><!-- end ngIf: !readonly -->
+</div>
+</doc-upload><!-- end ngIf: !readonly -->
+
+</ng-form>
+        <ng-form name="customerDocument" class="ng-pristine ng-valid ng-untouched ng-isolate-scope ng-not-empty ng-valid-required ng-valid-no-docs" novalidate="" ng-model="item.BankStatements" button-title="A recent Utility bill/bank statement (no more than 3 months old)" required="required" readonly="readonly">
+    <!-- ngIf: isFelt == false -->
+
+    <!-- ngIf: !readonly --><doc-upload ng-if="!readonly" ng-model="doc" readonly="readonly" button-title="title" class="ng-pristine ng-untouched ng-valid ng-scope ng-isolate-scope ng-not-empty"><div class="form-block">
+
+    <ul class="documents-list">
+        <div class="row">
+            <!-- ngRepeat: doc in model --><li ng-repeat="doc in model" class="col-sm-6 col-md-6 col-lg-3 ng-scope">
+                <div class="col-xs-4 col-sm-6 col-md-5">
+                    <a href="Api/Documents/Download?id=108db8d1-087c-4797-b01b-3b44b3057592" target="_blank">
+                        
+                        <img ng-src="Api/Documents/Thumbnail?id=108db8d1-087c-4797-b01b-3b44b3057592" src="Api/Documents/Thumbnail?id=108db8d1-087c-4797-b01b-3b44b3057592" />
+                    </a>
+                </div>
+                <div class="document-btn">
+                    <div class="col-xs-8 col-sm-6 col-md-7">
+                        <p>
+                            <a href="Api/Documents/Download?id=108db8d1-087c-4797-b01b-3b44b3057592" target="_blank">
+                                <span class="doc-name ellipsis ng-binding">cats.jpg</span>
+                            </a>
+                    </p></div>
+
+                    <div class="text-center">
+                        <!-- ngIf: !cannotDelete && !readonly && !(customerSide && !doc.Document.UserUploaded) --><button style="margin-bottom: 10px" ng-if="!cannotDelete &amp;&amp; !readonly &amp;&amp; !(customerSide &amp;&amp; !doc.Document.UserUploaded)" ng-click="deleteFile(doc.Id)" class="btn btn-sm btn-danger ng-scope">	<i class="fa fa-trash"></i> Delete</button><!-- end ngIf: !cannotDelete && !readonly && !(customerSide && !doc.Document.UserUploaded) -->
+                    
+
+                    </div>
+                </div>
+
+            </li><!-- end ngRepeat: doc in model -->
+        </div>
+    </ul>
+
+
+    <!-- ngIf: !readonly --><div ng-if="!readonly" class="uploader-container ng-scope">
+
+        <label>
+            <span class="btn ng-binding">A recent Utility bill/bank statement (no more than 3 months old)</span>
+
+            <input type="file" ng-click="resetInputValue($event)" name="file_source" ng-file-select="onFileSelect($files)" multiple="" />
+        </label>
+    </div><!-- end ngIf: !readonly -->
+</div>
+</doc-upload><!-- end ngIf: !readonly -->
+
+</ng-form>
+    </div><!-- end ngRepeat: item in loan.CustomerDetails.Directors -->
+</div>
+</div>
+
+</loan-documents>
+                    </div><!-- end ngRepeat: tab in tabset.tabs --><div class="tab-pane ng-scope" ng-repeat="tab in tabset.tabs" ng-class="{active: tabset.active === tab.index}" uib-tab-content-transclude="tab">
+    
+                        <change-history loan="loan" class="ng-scope ng-isolate-scope"><table class="table table-bordered table-striped">
+    <thead>
+        <tr>
+            <th>#</th>
+            <th>Date</th>
+            <th>Prev. Status</th>
+            <th>New Status</th>
+            <th>Comments</th>
+            <th>User</th>
+        </tr>
+    </thead>
+    <tbody>
+        <!-- ngRepeat: c in loan.ChangeHistory | orderBy:'DateTime' -->
+    </tbody>
+</table></change-history>
+                    </div><!-- end ngRepeat: tab in tabset.tabs --><div class="tab-pane ng-scope" ng-repeat="tab in tabset.tabs" ng-class="{active: tabset.active === tab.index}" uib-tab-content-transclude="tab">
+    
+                        <loan-scans loan="loan" readonly="readonly" class="ng-scope ng-isolate-scope">
+<div class="panel panel-default inner ng-isolate-scope" caption="Loan scans">
+    <div class="panel-heading">
+        <h4 class="ng-binding">Loan scans</h4>
+    </div>
+    <div class="panel-body" ng-transclude="">
+    <doc-upload ng-model="loan.CustomerDetails.Docs" readonly="readonly" on-save="save()" class="ng-pristine ng-untouched ng-valid ng-scope ng-isolate-scope ng-not-empty"><div class="form-block">
+
+    <ul class="documents-list">
+        <div class="row">
+            <!-- ngRepeat: doc in model -->
+        </div>
+    </ul>
+
+
+    <!-- ngIf: !readonly --><div ng-if="!readonly" class="uploader-container ng-scope">
+
+        <label>
+            <span class="btn ng-binding">Choose file</span>
+
+            <input type="file" ng-click="resetInputValue($event)" name="file_source" ng-file-select="onFileSelect($files)" multiple="" />
+        </label>
+    </div><!-- end ngIf: !readonly -->
+</div>
+</doc-upload>
+</div>
+</div>
+
+</loan-scans>
+                    </div><!-- end ngRepeat: tab in tabset.tabs --><div class="tab-pane ng-scope" ng-repeat="tab in tabset.tabs" ng-class="{active: tabset.active === tab.index}" uib-tab-content-transclude="tab">
+    
+                        <facility facility="loan.Facility" loan="loan" readonly="true" class="ng-scope ng-isolate-scope"><ng-form name="editFacility" class="newAppForm ng-pristine ng-valid-min ng-valid-max ng-valid-numeric-max-limit ng-valid-pattern ng-valid-validate-minimal-date ng-valid-date ng-valid ng-valid-required" novalidate="">
+
+    <div class="loan-selector">
+        <div class="col-md-3 loan-slider">
+            <div class="form-group form-group-lg">
+                <h3>Facility Amount</h3>
+                <p>
+                    <ng-form name="currencyEditor" aa-field-name="Facility Amount" ng-model="facility.Amount" is-required="true" readonly="readonly" min="0" max="10000000" class="ng-pristine ng-untouched ng-isolate-scope ng-valid-min ng-valid-max ng-valid-numeric-max-limit ng-valid-pattern ng-not-empty ng-valid ng-valid-required">
+    <div class="form-group form-group-lg">
+        <div class="input-group">
+                <span class="input-group-addon ng-binding">$</span>
+            <input name="currencyValue" id="_int" tabindex="" type="number" ng-model="model" class="form-control ng-pristine ng-untouched ng-valid-min ng-valid-max ng-valid-numeric-max-limit ng-valid-pattern ng-not-empty ng-valid ng-valid-required" ng-required="isRequired" ng-min="0" ng-max="10000000" ng-pattern="/^\d+(\.)?(\d{1,})?$/" aa-val-msg="" numeric-max-limit="999999999" aa-field-name-finder="" ng-readonly="readonly" cut-extra-digits="" step="any" disabled="disabled" required="required" readonly="readonly" />
+        </div><div class="validation-errors ng-scope" aa-val-msg-for="currencyEditor.currencyValue"><!-- ngRepeat: msg in errorMessages --><div class="notch notch-border"></div><div class="notch"></div></div>
+    </div>
+</ng-form>
+                </p>
+            </div>
+        </div>
+        <div class="col-md-3 loan-slider">
+            <h3>Start date</h3>
+            <p>
+                <div ng-model="facility.StartDate" id="facility.StartDate" required="required" readonly="readonly" aa-field-name="Start Date" class="ng-pristine ng-untouched ng-isolate-scope ng-not-empty ng-valid ng-valid-required">
+    <ng-form class="input-group date ng-pristine ng-valid-validate-minimal-date ng-valid-date ng-hide ng-valid ng-valid-required" name="dateEditor" ng-show="!readonly">
+        <input type="text" show-button-bar="false" id="facility.StartDate_int" ng-model="model" name="dateField" ng-required="required" validate-day="" validate-minimal-date="" aa-val-msg="" aa-field-name-finder="" attrs-setter="" uib-datepicker-popup="MM/dd/yyyy" ui-mask2="99/99/9999" show-weeks="false" class="form-control ng-pristine ng-untouched ng-isolate-scope ng-valid-validate-minimal-date ng-valid-date ng-not-empty ng-valid ng-valid-required" is-open="opened" tabindex="" ng-show="!hideInput" required="required" /><div uib-datepicker-popup-wrap="" ng-model="date" ng-change="dateSelection(date)" template-url="uib/template/datepickerPopup/popup.html" class="ng-pristine ng-untouched ng-valid ng-scope ng-not-empty"><!-- ngIf: isOpen -->
+</div>
+        <span class="input-group-addon" ng-click="open($event)">
+            <i class="glyphicon glyphicon-calendar"></i>
+        </span>
+    </ng-form><div class="validation-errors ng-scope" aa-val-msg-for="dateEditor.dateField"><!-- ngRepeat: msg in errorMessages --><div class="notch notch-border"></div><div class="notch"></div></div>
+    <input ng-show="readonly" value="01/30/2017" class="form-control" ng-readonly="readonly" disabled="disabled" readonly="readonly" />
+</div>
+            </p>
+
+        </div>
+        <div class="col-md-3 loan-slider">
+            <h3>End date</h3>
+            <p>
+                <div ng-model="facility.EndDate" id="facility.EndDate" required="required" readonly="readonly" aa-field-name="End Date" class="ng-pristine ng-untouched ng-isolate-scope ng-not-empty ng-valid ng-valid-required">
+    <ng-form class="input-group date ng-pristine ng-valid-validate-minimal-date ng-valid-date ng-hide ng-valid ng-valid-required" name="dateEditor" ng-show="!readonly">
+        <input type="text" show-button-bar="false" id="facility.EndDate_int" ng-model="model" name="dateField" ng-required="required" validate-day="" validate-minimal-date="" aa-val-msg="" aa-field-name-finder="" attrs-setter="" uib-datepicker-popup="MM/dd/yyyy" ui-mask2="99/99/9999" show-weeks="false" class="form-control ng-pristine ng-untouched ng-isolate-scope ng-valid-validate-minimal-date ng-valid-date ng-not-empty ng-valid ng-valid-required" is-open="opened" tabindex="" ng-show="!hideInput" required="required" /><div uib-datepicker-popup-wrap="" ng-model="date" ng-change="dateSelection(date)" template-url="uib/template/datepickerPopup/popup.html" class="ng-pristine ng-untouched ng-valid ng-scope ng-not-empty"><!-- ngIf: isOpen -->
+</div>
+        <span class="input-group-addon" ng-click="open($event)">
+            <i class="glyphicon glyphicon-calendar"></i>
+        </span>
+    </ng-form><div class="validation-errors ng-scope" aa-val-msg-for="dateEditor.dateField"><!-- ngRepeat: msg in errorMessages --><div class="notch notch-border"></div><div class="notch"></div></div>
+    <input ng-show="readonly" value="02/01/2017" class="form-control" ng-readonly="readonly" disabled="disabled" readonly="readonly" />
+</div>
+            </p>
+        </div>
+    </div>
+</ng-form>
+</facility>
+                    </div><!-- end ngRepeat: tab in tabset.tabs -->
+  </div>
+</div>
+            </div>
+        </div>
+    </ng-form><!-- end ngIf: isLoanDefined -->
+
+    </div>
+</div>
+</div></split-view>
+
+
+</ng-view>
+        </div>
+</div>
+    
+</elmenu>
+
+        
+
+
+
+    </section>
+    
+    <footer class="container">
+        <div class="container">
+    <br />5.9.33.0<br />
+    © 2017 - Turnkey Lender
+</div>
+
+    </footer>
+    
+
+
+    <script src="/bundles/vendor?v=0uunlYzmOQkrfHY3CF9LdvDuShc26OQ8rYLugvsoLCU1"></script>
+<script src="/bundles/shared?v=rUOOIDdb5IXrF4yLCH31_FHwog5GaNZPu8BzZqZxA7Q1"></script>
+<script src="/bundles/customerDetails?v=1Mvh9TBlRuOUWOD3coQuCnlaqyFXJovpclLhGSYwUrU1"></script>
+<script src="/bundles/admin?v=AcANkxPst2S4s4XoRNpnVxJeKtPKnt7H14SrBnZlXvw1"></script>
+<script src="/bundles/underwriter?v=moX8j0fWAzvwWLDQWnJX5bOCY85CQ_xU3-Bbf5azbaM1"></script>
+<script src="/bundles/originator?v=gvyHK18SZlpV3BS_zRLuXzAwMG3zNE2KPR1nGyJhJJo1"></script>
+<script src="/bundles/loanmanager?v=g5DcQbqIziHAZbruuues1NqVishaPySITPU6O31W99M1"></script>
+<script src="/bundles/collector?v=reaytpo3DrusD8drEFQEhdF6kqbnbDhRt9dooIv6WWE1"></script>
+<script src="/bundles/supervisor?v=H-ZUKfeFBZWltaAXuyLXtWtjDX6EPQWTtYjr35vkMGI1"></script>
+<script src="/bundles/reports?v=2QnwGAlEc1dPqbhEZTvw-9bjUKCC7ZKquIt9j4wtUAM1"></script>
+<script src="/bundles/collateral_backoffice?v=nh4RVGO7tcRcjCcrUVZ1nIOcQbUW9w_o-PYPwSi-qYA1"></script>
+
+
+    <script>
+    angular.module("el.app.run", [])
+        .config([
+            '$httpProvider', function($httpProvider) {
+                $httpProvider.defaults.headers.common["X-Requested-With"] = 'XMLHttpRequest';
+            }
+        ])
+        .config(["uibDatepickerConfig", "uibDatepickerPopupConfig", function(datepickerConfig, datepickerPopupConfig) {
+            datepickerConfig.startingDay = 0;
+            datepickerConfig.showWeeks = false;
+            datepickerPopupConfig.datepickerPopup = 'MM/dd/yyyy';
+        }])
+
+        .run([
+            "domainEnumsProvider", function(domainEnumsProvider) {
+                domainEnumsProvider.setEnums({"LoanStatus":[{"key":0,"value":"PreOrigination","translatedValue":"Pre-origination"},{"key":1,"value":"Origination","translatedValue":"Origination"},{"key":2,"value":"Reprocessing","translatedValue":"Reprocessing"},{"key":3,"value":"AutoProcessing","translatedValue":"Auto Processing"},{"key":4,"value":"WaitingForApproval","translatedValue":"Waiting for Approval"},{"key":5,"value":"Approved","translatedValue":"Approved"},{"key":6,"value":"Rejected","translatedValue":"Rejected"},{"key":7,"value":"Active","translatedValue":"Active"},{"key":8,"value":"PastDue","translatedValue":"Past Due"},{"key":9,"value":"Closed_Repaid","translatedValue":"Repaid"},{"key":10,"value":"Closed_WrittenOff","translatedValue":"Written off"},{"key":11,"value":"RolloverRequested","translatedValue":"Rollover Requested"},{"key":12,"value":"Collateral","translatedValue":"Collateral"},{"key":13,"value":"DisbursementFailed","translatedValue":"Disbursement Failed"},{"key":14,"value":"DisbursementInProgress","translatedValue":"Disbursement in Progress"},{"key":15,"value":"Closed_Restructured","translatedValue":"Restructured"},{"key":1000,"value":"FacilityDecision","translatedValue":"Facility Decision"},{"key":1001,"value":"LoanOfferWatingForAccept","translatedValue":"Loan Offer and Loan Agreement has been sent for accepting anf signing"},{"key":1002,"value":"LoanOfferSigned","translatedValue":"Loan Offer and Loan Agreement accepted and signed"},{"key":1003,"value":"LoanOfferRejected","translatedValue":"Loan Offer and Loan Agreement rejected by Customer"},{"key":1004,"value":"DrawdownRejected","translatedValue":"Drawdown rejected by Customer"}],"InstallmentState":[{"key":0,"value":"Scheduled","translatedValue":"Scheduled"},{"key":1,"value":"PaidOnTime","translatedValue":"Paid on time"},{"key":2,"value":"PaidEarly","translatedValue":"Paid early"},{"key":3,"value":"PaidLate","translatedValue":"Paid Late"},{"key":4,"value":"Missed","translatedValue":"Missed"},{"key":5,"value":"Closed","translatedValue":"Closed"}],"DecisionType":[{"key":0,"value":"None","translatedValue":"Do nothing"},{"key":1,"value":"Approve","translatedValue":"Approve"},{"key":2,"value":"Refer","translatedValue":"Refer"},{"key":3,"value":"Rework","translatedValue":"Rework"},{"key":4,"value":"Reject","translatedValue":"Reject"}],"RiskLevel":[{"key":0,"value":"Low","translatedValue":"Low"},{"key":1,"value":"Medium","translatedValue":"Medium"},{"key":2,"value":"High","translatedValue":"High"},{"key":3,"value":"Highest","translatedValue":"Highest"},{"key":4,"value":"Default","translatedValue":"Default"},{"key":5,"value":"Undefined","translatedValue":"-"}],"Gender":[{"key":0,"value":"Unknown","translatedValue":"Unknown"},{"key":1,"value":"Male","translatedValue":"Male"},{"key":2,"value":"Female","translatedValue":"Female"}],"CollectorsActionType":[{"key":0,"value":"CheckRepayment","translatedValue":"Check Repayment"},{"key":1,"value":"CallBorrower","translatedValue":"Call Borrower"},{"key":2,"value":"EmailBorrower","translatedValue":"Email Borrower"},{"key":3,"value":"WriteOffLoan","translatedValue":"Write Off Loan"}],"ContactResult":[{"key":0,"value":"Failure","translatedValue":"Failure"},{"key":1,"value":"Success","translatedValue":"Success"},{"key":2,"value":"DidNotReach","translatedValue":"Failed to reach"},{"key":3,"value":"RepaymentRejected","translatedValue":"Rejected to pay"},{"key":4,"value":"ContactWithOtherPerson","translatedValue":"Contacted another person"},{"key":5,"value":"PromiseToPay","translatedValue":"Promised to pay"}],"ContactMethod":[{"key":0,"value":"Email","translatedValue":"Email"},{"key":1,"value":"Mobile","translatedValue":"Mobile"},{"key":2,"value":"WorkPhone","translatedValue":"Work Phone"},{"key":3,"value":"AltPhone","translatedValue":"Alternative Phone"}],"ColumnFormat":[{"key":1,"value":"Integer","translatedValue":"Integer"},{"key":2,"value":"Percents","translatedValue":"Percents"},{"key":3,"value":"String","translatedValue":"String"},{"key":4,"value":"Money","translatedValue":"Money"},{"key":5,"value":"TimeDuration","translatedValue":"TimeDuration"}],"LoanPeriodKind":[{"key":0,"value":"Days","translatedValue":"Days"},{"key":1,"value":"Months","translatedValue":"Months"},{"key":2,"value":"Years","translatedValue":"Years"},{"key":3,"value":"Weeks","translatedValue":"Weeks"},{"key":4,"value":"Custom","translatedValue":"Custom"}],"LoanType":[{"key":0,"value":"Regular","translatedValue":"Regular Payments"},{"key":1,"value":"Payday","translatedValue":"Payday Loan"}],"PaymentType":[{"key":0,"value":"Check","translatedValue":"Check"},{"key":1,"value":"Cash","translatedValue":"Cash"},{"key":2,"value":"DirectBankTransfer","translatedValue":"Direct Bank Transfer"},{"key":3,"value":"Card","translatedValue":"Card"}]});
+            }
+        ])
+
+        .run([
+            "globals", function(globals) {
+                globals.currency = {
+                    format : "${{value}}",
+                    currencySign : "$"
+                };
+               
+                globals.DateFilter = "MM/dd/yyyy";
+                globals.DateTimeFilter = "MM/dd/yy HH:mm";
+
+                globals.config = {"Edition":1,"LoanType":null,"PaydayTermMeasure":0};
+                globals.config.version = '5.9.33.0';
+            }
+        ])
+
+    .filter('loanStatus', ['domainEnumsProvider', function (domainEnumsProvider) {return domainEnumsProvider.getEnumValueFunc('LoanStatus');}])
+.filter('installmentState', ['domainEnumsProvider', function (domainEnumsProvider) {return domainEnumsProvider.getEnumValueFunc('InstallmentState');}])
+.filter('decisionType', ['domainEnumsProvider', function (domainEnumsProvider) {return domainEnumsProvider.getEnumValueFunc('DecisionType');}])
+.filter('riskLevel', ['domainEnumsProvider', function (domainEnumsProvider) {return domainEnumsProvider.getEnumValueFunc('RiskLevel');}])
+.filter('gender', ['domainEnumsProvider', function (domainEnumsProvider) {return domainEnumsProvider.getEnumValueFunc('Gender');}])
+.filter('collectorsActionType', ['domainEnumsProvider', function (domainEnumsProvider) {return domainEnumsProvider.getEnumValueFunc('CollectorsActionType');}])
+.filter('contactResult', ['domainEnumsProvider', function (domainEnumsProvider) {return domainEnumsProvider.getEnumValueFunc('ContactResult');}])
+.filter('contactMethod', ['domainEnumsProvider', function (domainEnumsProvider) {return domainEnumsProvider.getEnumValueFunc('ContactMethod');}])
+.filter('columnFormat', ['domainEnumsProvider', function (domainEnumsProvider) {return domainEnumsProvider.getEnumValueFunc('ColumnFormat');}])
+.filter('loanPeriodKind', ['domainEnumsProvider', function (domainEnumsProvider) {return domainEnumsProvider.getEnumValueFunc('LoanPeriodKind');}])
+.filter('loanType', ['domainEnumsProvider', function (domainEnumsProvider) {return domainEnumsProvider.getEnumValueFunc('LoanType');}])
+.filter('paymentType', ['domainEnumsProvider', function (domainEnumsProvider) {return domainEnumsProvider.getEnumValueFunc('PaymentType');}])
+
+    // transfer timezone offset to the front-end. This value is used to fix difference between client and server timezone (see httpDateFixer.js)
+    window.timeZoneOffsetMinutes = 120;
+    ;
+</script>
+
+<script>
+    angular.module("el.rootPath", ["el.app.run"])
+
+            .run(["globals", "domainEnumsProvider", function (globals, domainEnumsProvider) {
+                globals.user = { username: "Alex Test", id: "9f77aeb1-a34e-4601-88a4-3dca07a2ee50" };
+                globals.registered = true;
+            }])
+
+    ;
+    angular.module('el.app', ['el.shared.dependencies', 'el.shared.menu', 'el.shared.contacts', 'el.shared.dialogs.rollover.rolloverDialogCtrl', 'el.shared.dialogs.submitPayment.submitPaymentDialog', 'el.shared.directives.countries', 'el.shared.directives.creditBureauInfo', 'el.shared.directives.expandableDetails', 'el.shared.directives.fullWidthGrid', 'el.shared.directives.leftWithTotal', 'el.shared.directives.loanHistory', 'el.shared.directives.loanToolbar', 'el.shared.directives.loginButton', 'el.shared.directives.readonlyinform', 'el.shared.directives.scoringResults', 'el.shared.directives.states', 'el.shared.directives.timeShiftButton', 'el.shared.directives.transcludeParentScope', 'el.shared.directives.wGrid', 'el.shared.directives.changeHist.changeHistory', 'el.shared.directives.charts.approveToReject', 'el.shared.directives.charts.barChartWithHandles', 'el.shared.directives.charts.chartOrTable', 'el.shared.directives.charts.chartOrTableSwitch', 'el.shared.directives.charts.chartTableFormatter', 'el.shared.directives.charts.d3ChartHelper', 'el.shared.directives.charts.d3Helper', 'el.shared.directives.charts.d3legend', 'el.shared.directives.charts.debtToRepayments', 'el.shared.directives.charts.graphBaseDir', 'el.shared.directives.charts.horizontalBar', 'el.shared.directives.charts.horizontalBar2', 'el.shared.directives.charts.legendElement', 'el.shared.directives.charts.lineChartD3', 'el.shared.directives.charts.multipleBarsChart', 'el.shared.directives.charts.scoringGauge', 'el.shared.directives.charts.stackedBarsChart', 'el.shared.directives.charts.tableChart', 'el.shared.directives.controls.bankAccount', 'el.shared.directives.controls.btnGroup', 'el.shared.directives.controls.buildingNumber', 'el.shared.directives.controls.currencyEdit', 'el.shared.directives.controls.currencySelect', 'el.shared.directives.controls.date', 'el.shared.directives.controls.dictionary', 'el.shared.directives.controls.dictionary.dictionarySvc', 'el.shared.directives.controls.docupload', 'el.shared.directives.controls.driverLicense', 'el.shared.directives.controls.dropdowns.dropcommands', 'el.shared.directives.controls.dropdowns.dropdown', 'el.shared.directives.controls.dropdowns.dropdownbutton', 'el.shared.directives.controls.email', 'el.shared.directives.controls.fields.elField', 'el.shared.directives.controls.fields.elFieldList', 'el.shared.directives.controls.fileUpload', 'el.shared.directives.controls.hint', 'el.shared.directives.controls.loanAgreement.loanAgreementField', 'el.shared.directives.controls.materialCtrl.materialControl', 'el.shared.directives.controls.name', 'el.shared.directives.controls.numeric.numericEdit', 'el.shared.directives.controls.panel.elPanel', 'el.shared.directives.controls.passport', 'el.shared.directives.controls.percentsEdit.percents', 'el.shared.directives.controls.phone', 'el.shared.directives.controls.ssn', 'el.shared.directives.controls.term', 'el.shared.directives.controls.timeSpanEdit.timeSpan', 'el.shared.directives.controls.validation.aaFiledNameFinder', 'el.shared.directives.controls.validation.compareNumValidator', 'el.shared.directives.controls.year', 'el.shared.directives.controls.yearsAndMonths', 'el.shared.directives.controls.yesno', 'el.shared.directives.creditBureauCheck', 'el.shared.directives.documents.loanDocuments', 'el.shared.directives.documents.systemDocuments', 'el.shared.directives.editableTable', 'el.shared.directives.helpers.capitalize', 'el.shared.directives.helpers.confirmation', 'el.shared.directives.helpers.equals', 'el.shared.directives.helpers.minmaxHelper', 'el.shared.directives.helpers.ngTemplate', 'el.shared.directives.helpers.numberRound', 'el.shared.directives.helpers.numberValidate', 'el.shared.directives.helpers.rememberTab', 'el.shared.directives.indiClick', 'el.shared.directives.mvcCaptcha', 'el.shared.directives.mvcCaptcha.mvcCaptchaFrontOffice', 'el.shared.directives.popupEditor', 'el.shared.directives.previousActivity', 'el.shared.directives.schedule.loanSchedule', 'el.shared.directives.schedule.loanScheduleNew', 'el.shared.directives.schedule.transactions', 'el.shared.directives.split.loanBack', 'el.shared.directives.split.loanSplitView', 'el.shared.directives.split.splitGrid', 'el.shared.directives.split.splitList', 'el.shared.filters.abs', 'el.shared.filters.address', 'el.shared.filters.currency', 'el.shared.filters.dashIfEmpty', 'el.shared.filters.dateShort', 'el.shared.filters.dateTime', 'el.shared.filters.humanview', 'el.shared.filters.money', 'el.shared.filters.passport', 'el.shared.filters.percents', 'el.shared.filters.term', 'el.shared.filters.truncate', 'el.shared.loanPlayer', 'el.shared.offer.editOffer', 'el.shared.services.accounts', 'el.shared.services.blockUISvc', 'el.shared.services.changeTracker', 'el.shared.services.clientLogger', 'el.shared.services.collectionService', 'el.shared.services.customerDetailsService', 'el.shared.services.customerSearch', 'el.shared.services.docTypesSvc', 'el.shared.services.domainEnums', 'el.shared.services.globals', 'el.shared.services.helpers', 'el.shared.services.httpDateFixer', 'el.shared.services.httpErrorLogger', 'el.shared.services.httpTemplateVersion', 'el.shared.services.loanList', 'el.shared.services.loanService', 'el.shared.services.offerEditor', 'el.shared.services.alert.alertService', 'el.shared.strResources', 'el.shared.filters.phone', 'el.shared.filters.readableSums', 'el.shared.services.enums', 'el.shared.services.months', 'el.shared.directives.customerDetails.customerAddress', 'el.shared.directives.customerDetails.customerBank', 'el.shared.directives.customerDetails.customerDetailsEditor', 'el.shared.directives.customerDetails.customerPersonal', 'el.shared.directives.customerDetails.useOfFunds', 'el.shared.directives.customerDetails.companyInfo', 'el.shared.directives.controls.regNumber', 'el.shared.directives.customerDetails.customerOwnerInfo', 'el.shared.directives.customerDetails.customerDocument', 'el.shared.facility.editFacility', 'el.shared.facility.editFacilityButton', 'el.shared.directives.controls.bondsPhone.bondsPhone', 'el.shared.directives.documents.loanScans', 'el.shared.facility.facility', 'el.shared.services.bondSvc', 'el.system.bondMngmt', 'el.admin.creditproducts', 'el.admin.roles', 'el.admin.directives.rolesEditor', 'el.admin.system', 'el.system.decisionRules', 'el.system.export', 'el.system.mailsettings', 'el.system.pastDueSettings', 'el.system.riskSegmentEditor', 'el.system.scorecard', 'el.system.scoringCategoryEditor', 'el.system.notifications.dueReminders', 'el.system.notifications.editNotificationButtons', 'el.system.notifications.editNotificationDlg', 'el.system.notifications.notificationSettings', 'el.blacklist.blacklistButton', 'el.blacklist.blacklistmanager', 'el.blacklist.blackListSvc', 'el.archive', 'el.creditproduct.cpeditor', 'el.creditproduct.creditproductSvc', 'el.accounts.users', 'el.accounts.selectUsers', 'el.dictMngmt.dictItemEditor', 'el.dictMngmt', 'el.dictMngmt.dictMngmtSvc', 'el.dictMngmt.editors.phoneDictItemEditor', 'el.branchOffices.branchOfficeSelect', 'el.branchOffices.branchOfficesMngmt', 'el.branchOffices.branchOfficesSvc', 'el.branchOffices.officeList', 'el.testing.main', 'el.testing.schedule', 'el.docTypes.documents', 'el.underwriting', 'el.origination.customerDetailsDlgEditor', 'el.origination.fillCustomerDetailsCtrl', 'el.origination.newOfferCtrl', 'el.origination', 'el.origination.VerificationCtrl', 'el.collateral.addCollateral', 'el.collateral.collateralElement', 'el.collateral.collateralItemDlgEdit', 'el.collateral.collateralItemEstate', 'el.collateral.collateralItemMoney', 'el.collateral.collateralItemsChooser', 'el.collateral.collateralItemVehicle', 'el.collateral.collateralList', 'el.collateral.collateralsEditor', 'el.collateral.collateralSvc', 'el.collateral.ltvField', 'el.collateral.ltvHistory', 'el.servicing', 'el.restructure.currencyPair', 'el.restructure', 'el.restructure.restructuredTab', 'el.collection', 'el.collection.collectorsActionList', 'el.collection.summary', 'el.portfolio.directives.arrowUpDown', 'el.portfolio.directives.reportValue', 'el.portfolio.directives.tableReport', 'el.portfolio.executive', 'el.portfolio.officersReports', 'el.portfolio', 'el.portfolio.risks', 'el.portfolio.scoringReports', 'el.portfolio.services.reportService', 'el.operational', 'el.operational.operationalChart', 'el.operational.operationalReportsSvc', 'el.operational.originatorsPerformanceChart', 'el.collateralManager.collateralItemDlgValuator', 'el.collateralManager', 'el.collateralManager.collateralTable']);
+</script>
+
+
+</body></html>

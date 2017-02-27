@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy package &apos;ru.esteru.selenium.factory&apos; to &apos;tkl_UkBandi/src&apos;&#x0D;&#x0A;- Original project: &apos;tkl_Ultrafinance&apos;&#x0D;&#x0A;- Destination element: &apos;tkl_UkBandi/src&apos;&#x0D;&#x0A;- Original element: &apos;tkl_Ultrafinance/src/ru.esteru.selenium.factory&apos;" description="Copy package" destination="=tkl_UkBandi/src" element1="/src&lt;ru.esteru.selenium.factory" flags="589830" fragments="1" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyPackages" stamp="1485772632412" version="1.0"/>
+</session>

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Move package &apos;ru.esteru.selenium.factory&apos; to &apos;tkl_Prabumitra/src&apos;&#x0D;&#x0A;- Original project: &apos;UltraFinance&apos;&#x0D;&#x0A;- Destination element: &apos;tkl_Prabumitra/src&apos;&#x0D;&#x0A;- Original element: &apos;UltraFinance/src/ru.esteru.selenium.factory&apos;&#x0D;&#x0A;- Update references to refactored element" description="Move package" destination="=tkl_Prabumitra/src" element1="/src&lt;ru.esteru.selenium.factory" flags="589830" fragments="1" id="org.eclipse.jdt.ui.move" policy="org.eclipse.jdt.ui.movePackages" stamp="1484070315257" version="1.0"/>
+</session>

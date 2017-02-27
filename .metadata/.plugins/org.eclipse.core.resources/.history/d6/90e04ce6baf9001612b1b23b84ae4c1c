@@ -1,0 +1,118 @@
+package com.example.tests;
+
+import java.util.regex.Pattern;
+import java.util.concurrent.TimeUnit;
+import org.junit.*;
+import static org.junit.Assert.*;
+import static org.hamcrest.CoreMatchers.*;
+import org.openqa.selenium.*;
+import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.remote.DesiredCapabilities;
+import org.openqa.selenium.support.ui.Select;
+
+
+import ru.esteru.selenium.factory.WebDriverFactory;
+
+import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.How;
+import org.openqa.selenium.support.PageFactory;
+
+public class tklTestPage{
+  private WebDriver driver;
+  private String baseUrl;
+ 
+/*
+              @FindBy(how=How.ID, using="UserName")
+              private WebElement username;
+          
+          
+              @FindBy(how=How.ID, using="Password")
+              private WebElement password;
+          
+          
+              @FindBy(how=How.XPATH, using="//input[@type='submit']")
+              private WebElement submit;
+  */        
+  
+  
+  
+  //private StringBuffer verificationErrors = new StringBuffer();
+
+  @Before
+  public void setUp()  {
+    System.setProperty("webdriver.chrome.driver", "D:\\AutomationTesting\\chromedriver_win32\\chromedriver.exe");
+	driver = WebDriverFactory.getDriver(DesiredCapabilities.chrome());
+    driver.get("http://vm-elender:9288/Account/Login");
+    driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+    driver.manage().window().maximize();
+  }
+  /*public tklTestPage(WebDriver driver) {
+      PageFactory.initElements(driver, this);
+      this.driver = driver;
+  }*/
+//-----------------------------------------------------
+/*  @Test
+public void faileLogin(){
+	LoginPage login = new LoginPage(driver);
+	login.enterUserName("admin");
+	login.enterPassword("123123");
+	login.submit();
+	assertEquals("Invalid username or password.",login.loginError());
+	/*username.sendKeys(username);
+    userPassword.sendKeys(password);
+    submit.click();
+}
+  @Test
+public void lockUser(){
+	LoginPage login = new LoginPage(driver);
+	login.enterUserName("admin");
+	login.enterPassword("123123");
+	login.submit();
+	try{
+	assertEquals("Your account has been locked out until 2/23/2017 11:04:14 AM because of several consecutive failed login attempts.",login.loginError());
+	} 
+	catch(AssertionError e){
+		System.out.println(e.getMessage());
+	}
+	/*username.sendKeys(username);
+    userPassword.sendKeys(password);
+    submit.click();
+}*/
+  @Test
+  public void correctlogin() {
+	
+  	LoginPage login = new LoginPage(driver);
+  	login.enterUserName("admin");
+  	login.enterPassword("123456");
+  	login.submit();
+  	BackFirsPage originator = new BackFirsPage(driver);
+  	//driver.findElement(By.linkText("Underwriting")).click();
+  	System.out.println(driver.findElement(By.linkText("Origination")).getAttribute("background-color").toString());
+  	assertTrue(driver.findElement(By.linkText("Origination")).getAttribute("background-color").equals("#bd1e1f"));
+  	/*try{
+  	assertTrue(driver.findElement(By.linkText("Origination")).getAttribute("background-color").equals("#bd1e1f"));
+  			//getCssValue("background-color").equals("#bd1e1e"));
+  	}
+  	catch(Exception e)
+  	{
+  		System.out.println(e.getMessage());
+  	}*/
+  	//assertTrue(originator.getOriginator().);
+  	
+   }
+/*private String loginError() {
+	// TODO Auto-generated method stub
+	driver.findElement(By.cssSelector("li..firepath-matching-node"));
+	return this;
+}*/
+//------------------------------------------------------
+  @After
+  public void tearDown()  {
+   driver.close();
+	  /* driver.quit();
+    String verificationErrorString = verificationErrors.toString();
+    if (!"".equals(verificationErrorString)) {
+      fail(verificationErrorString);
+    }*/
+  }
+}
