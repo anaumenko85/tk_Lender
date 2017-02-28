@@ -12,7 +12,6 @@
 <fullyQualifiedTypeName name="okhttp3.Request"/>
 <fullyQualifiedTypeName name="java.io.BufferedReader"/>
 <fullyQualifiedTypeName name="java.io.InputStreamReader"/>
-<fullyQualifiedTypeName name="com.gargoylesoftware.htmlunit.javascript.host.URL"/>
 <fullyQualifiedTypeName name="java.net.HttpURLConnection"/>
 <fullyQualifiedTypeName name="java.io.OutputStream"/>
 <fullyQualifiedTypeName name="org.openqa.selenium.support.ui.WebDriverWait"/>
@@ -24,7 +23,6 @@
 <fullyQualifiedTypeName name="org.openqa.selenium.support.ui.ExpectedConditions"/>
 <fullyQualifiedTypeName name="java.sql.Driver"/>
 <fullyQualifiedTypeName name="java.lang.Thread"/>
-<fullyQualifiedTypeName name="java.io.IOException"/>
 <fullyQualifiedTypeName name="java.io.FileInputStream"/>
 <fullyQualifiedTypeName name="java.io.File"/>
 <fullyQualifiedTypeName name="org.apache.poi.hssf.usermodel.HSSFSheet"/>
@@ -40,12 +38,22 @@
 <fullyQualifiedTypeName name="org.openqa.selenium.By.ById"/>
 <fullyQualifiedTypeName name="ru.esteru.selenium.factory.WebDriverFactory"/>
 <fullyQualifiedTypeName name="org.openqa.selenium.remote.DesiredCapabilities"/>
-<fullyQualifiedTypeName name="org.openqa.selenium.support.FindBy"/>
 <fullyQualifiedTypeName name="com.example.tests.LoginPage"/>
 <fullyQualifiedTypeName name="org.openqa.selenium.support.How"/>
 <fullyQualifiedTypeName name="java.lang.IllegalArgumentException"/>
 <fullyQualifiedTypeName name="java.lang.Exception"/>
 <fullyQualifiedTypeName name="org.openqa.selenium.By"/>
-<fullyQualifiedTypeName name="org.openqa.selenium.WebDriver"/>
 <fullyQualifiedTypeName name="org.openqa.selenium.support.pagefactory.AjaxElementLocatorFactory"/>
+<fullyQualifiedTypeName name="java.util.NoSuchElementException"/>
+<fullyQualifiedTypeName name="java.util.Properties"/>
+<fullyQualifiedTypeName name="com.gargoylesoftware.htmlunit.javascript.host.URL"/>
+<fullyQualifiedTypeName name="java.net.URL"/>
+<fullyQualifiedTypeName name="java.io.IOException"/>
+<fullyQualifiedTypeName name="com.tklender.data.UserData"/>
+<fullyQualifiedTypeName name="org.openqa.selenium.WebDriver"/>
+<fullyQualifiedTypeName name="com.tklender.pages.Page"/>
+<fullyQualifiedTypeName name="org.openqa.selenium.support.FindBy"/>
+<fullyQualifiedTypeName name="org.openqa.selenium.WebElement"/>
+<fullyQualifiedTypeName name="org.openqa.selenium.support.PageFactory"/>
+<fullyQualifiedTypeName name="com.example.java.ConfigProperties"/>
 </qualifiedTypeNameHistroy>

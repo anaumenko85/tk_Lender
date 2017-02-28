@@ -1,0 +1,2 @@
+login.url = 'http://vm-elender:9288/Account/Login'
+imp.wait = 10
