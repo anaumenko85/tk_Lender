@@ -1,10 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-<fullyQualifiedTypeName name="org.openqa.selenium.chrome.ChromeDriver"/>
-<fullyQualifiedTypeName name="com.google.common.net.MediaType"/>
-<fullyQualifiedTypeName name="org.junit.runner.Request"/>
-<fullyQualifiedTypeName name="com.gargoylesoftware.htmlunit.javascript.host.fetch.Response"/>
-<fullyQualifiedTypeName name="org.apache.http.HttpResponse"/>
 <fullyQualifiedTypeName name="okhttp3.OkHttpClient"/>
 <fullyQualifiedTypeName name="okhttp3.RequestBody"/>
 <fullyQualifiedTypeName name="okhttp3.MediaType"/>
@@ -39,7 +34,6 @@
 <fullyQualifiedTypeName name="ru.esteru.selenium.factory.WebDriverFactory"/>
 <fullyQualifiedTypeName name="org.openqa.selenium.remote.DesiredCapabilities"/>
 <fullyQualifiedTypeName name="com.example.tests.LoginPage"/>
-<fullyQualifiedTypeName name="org.openqa.selenium.support.How"/>
 <fullyQualifiedTypeName name="java.lang.IllegalArgumentException"/>
 <fullyQualifiedTypeName name="java.lang.Exception"/>
 <fullyQualifiedTypeName name="org.openqa.selenium.By"/>
@@ -49,11 +43,21 @@
 <fullyQualifiedTypeName name="com.gargoylesoftware.htmlunit.javascript.host.URL"/>
 <fullyQualifiedTypeName name="java.net.URL"/>
 <fullyQualifiedTypeName name="java.io.IOException"/>
-<fullyQualifiedTypeName name="com.tklender.data.UserData"/>
 <fullyQualifiedTypeName name="org.openqa.selenium.WebDriver"/>
 <fullyQualifiedTypeName name="com.tklender.pages.Page"/>
-<fullyQualifiedTypeName name="org.openqa.selenium.support.FindBy"/>
-<fullyQualifiedTypeName name="org.openqa.selenium.WebElement"/>
-<fullyQualifiedTypeName name="org.openqa.selenium.support.PageFactory"/>
 <fullyQualifiedTypeName name="com.example.java.ConfigProperties"/>
+<fullyQualifiedTypeName name="org.openqa.selenium.support.PageFactory"/>
+<fullyQualifiedTypeName name="com.tklender.data.UserData"/>
+<fullyQualifiedTypeName name="com.tklender.pages.BackFirsPage"/>
+<fullyQualifiedTypeName name="java.lang.System"/>
+<fullyQualifiedTypeName name="java.awt.List"/>
+<fullyQualifiedTypeName name="java.util.List"/>
+<fullyQualifiedTypeName name="org.openqa.selenium.support.How"/>
+<fullyQualifiedTypeName name="org.openqa.selenium.WebElement"/>
+<fullyQualifiedTypeName name="org.openqa.selenium.support.FindBy"/>
+<fullyQualifiedTypeName name="com.tklender.pages.AddUserPage"/>
+<fullyQualifiedTypeName name="com.tklender.pages.SystemPage"/>
+<fullyQualifiedTypeName name="com.swat.pages.AdminLoginPage"/>
+<fullyQualifiedTypeName name="com.swat.pages.AdminHomePage"/>
+<fullyQualifiedTypeName name="com.tklender.staticdata.PageUrl"/>
 </qualifiedTypeNameHistroy>

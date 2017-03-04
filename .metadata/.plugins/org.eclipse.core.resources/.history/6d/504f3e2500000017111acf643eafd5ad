@@ -1,0 +1,36 @@
+package com.tklender.pages;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.How;
+import org.openqa.selenium.support.PageFactory;
+
+public class SystemPage extends Page {
+	//private WebDriver driver;
+	private BackFirsPage backFirsPage;
+	
+	@FindBy(how=How.LINK_TEXT, using="ADD USER")
+    private WebElement btnAddUser;
+	
+    @FindBy(how=How.CSS, using="button[ng-click=\"remove()\"]")
+    private WebElement btnDeleteUser;
+
+    @FindBy(how=How.CSS, using="input[placeholder=\"Search\"]")
+    private WebElement serchUser;
+
+    @FindBy(how=How.CSS, using="#usersGrid_grid")
+    private WebElement listOfUser;
+	
+	public SystemPage(WebDriver driver) {
+		// TODO Auto-generated constructor stub
+		super(driver);
+	}
+	public AddUserPage btnAddUser(){
+		if(verifyEquals("System",backFirsPage.acliveLink.getText())){
+			btnAddUser.click();	
+		} else
+			backFirsPage.linkSystem.click();
+		return PageFactory.initElements(driver, AddUserPage.class);
+	}
+}

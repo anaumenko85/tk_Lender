@@ -1,0 +1,5 @@
+.*
+!.gitignore
+target
+eclipse-target
+test-output

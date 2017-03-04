@@ -1,0 +1,38 @@
+package com.tklender.pages;
+
+import java.util.NoSuchElementException;
+import static org.junit.Assert.*;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+
+public abstract class Page {
+	protected WebDriver driver;
+	
+	public Page(WebDriver driver){
+		this.driver = driver;
+	}
+	public void type(WebElement webElement, String text){
+		webElement.clear();
+		webElement.sendKeys(text);
+	}
+	
+	public boolean isElementPresent(WebElement element) {
+	    try {
+	      element.isDisplayed();
+	      return true;
+	    } catch (NoSuchElementException e) {
+	      return false;
+	    }
+	  }
+	public boolean verifyEquals(String message, Object o1){
+		try{
+			assertEquals(message,o1);
+			return true;
+		}
+		catch(AssertionError e){
+			System.out.println("4to-to informativnoe");
+			return false;
+		}
+	}
+}

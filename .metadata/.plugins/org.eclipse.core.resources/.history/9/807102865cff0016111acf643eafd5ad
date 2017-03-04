@@ -1,0 +1,66 @@
+package com.tklender.pages;
+
+import java.util.List;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindBy;
+
+public class BackFirsPage extends Page{
+	
+	private WebDriver driver;
+	@FindBy(linkText = "Log off")
+	public WebElement linkLogOut;
+	@FindBy(linkText = "Login")
+	public WebElement linkLogIn;
+	@FindBy(css = "div.navbar-collapse.collapse > ul li.active")
+	public WebElement acliveLink;
+
+	public BackFirsPage(WebDriver driver) {
+		// TODO Auto-generated constructor stub
+		super(driver);
+	}
+	
+	public boolean isLoggedOut(){
+		if(isElementPresent(linkLogIn)){
+		return true;
+	}
+	else {
+		return false;
+		}
+	}
+	
+	public boolean isLoggedIn(){
+		if(isElementPresent(linkLogOut)) return true;
+	else return false;
+	}
+	
+	public void logout(){
+		linkLogOut.click();
+	}
+	
+	public  List<WebElement> getLinkWorkPlace(){
+		
+		List<WebElement> workPlaceMenu = driver.findElements(By.cssSelector("div.navbar-collapse.collapse > ul li.active"));
+		return workPlaceMenu;	
+	} 
+	
+	public WebElement getActiveMenu(){
+	
+		return driver.findElement(By.cssSelector("div.navbar-collapse.collapse > ul li.active"));
+		 
+	}
+
+	public Object getOriginator() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	public Object getColorOriginator() {
+		// TODO Auto-generated method stub
+		return driver.findElement(By.linkText("System")).getCssValue("background-color").toString();
+		
+	}
+
+}

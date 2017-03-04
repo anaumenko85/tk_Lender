@@ -1,0 +1,37 @@
+package com.tklender.pages;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+
+public class BackFirsPage extends Page{
+	
+	private WebDriver driver;
+	@FindBy(linkText = "Log out")
+	public WebElement linkLogOut;
+
+	public BackFirsPage(WebDriver driver) {
+		// TODO Auto-generated constructor stub
+		super(driver);
+	}
+	
+	public boolean isLoggedOut(){
+		if(isElementPresent(linkLogin)){
+		return true;
+	}
+	else {
+		return false;
+		}
+	}
+
+	public Object getOriginator() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	public Object getColorOriginator() {
+		// TODO Auto-generated method stub
+		return driver.findElement(By.linkText("System")).getCssValue("background-color").toString();
+		
+	}
+
+}

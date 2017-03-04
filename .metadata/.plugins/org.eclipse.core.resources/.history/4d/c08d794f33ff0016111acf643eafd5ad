@@ -1,0 +1,62 @@
+package com.tklender.pages;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.PageFactory;
+
+import com.example.java.ConfigProperties;
+import com.tklender.data.UserData;
+
+public class LoginPage extends Page{
+
+	//private WebDriver driver;
+	@FindBy(linkText = "Log in")
+	public WebElement linkLogIn;
+	@FindBy(id = "UserName")
+	public WebElement username;
+	@FindBy(id = "Password")
+	public WebElement password;
+	@FindBy(xpath = "//input[@type='submit']")
+	public WebElement submit;
+	
+	public LoginPage(WebDriver driver) {
+		// TODO Auto-generated constructor stub
+		super(driver);
+	}
+
+	public void open() {
+		driver.get(ConfigProperties.getProperty("login.url"));
+		
+	}
+	
+	public BackFirsPage loginAs(UserData admin){
+		linkLogIn.click();
+		type(username, admin.name);
+		type(password, admin.password);
+		submit.click();
+		return PageFactory.initElements(driver, BackFirsPage.class);
+	}
+
+	/*public void enterUserName(String username) {
+		// TODO Auto-generated method stub
+		driver.findElement(By.id("UserName")).sendKeys(username);
+	}
+
+	public void enterPassword(String password) {
+		// TODO Auto-generated method stub
+		driver.findElement(By.id("Password")).sendKeys(password);
+	}
+
+	public void submit() {
+		// TODO Auto-generated method stub
+		driver.findElement(By.xpath("//input[@type='submit']")).click();
+	}
+
+	public String loginError() {
+		// TODO Auto-generated method stub
+		return driver.findElement(By.xpath("//section[@id='loginForm']/form/div/div/div/ul/li")).getText();
+	}*/
+
+}
